@@ -24,7 +24,8 @@ const greeting = {
   subTitle: emoji(
     "Currently pursuing my bachelor's in Computer Science major. I'm a passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
   ),
-  resumeLink: "https://iforgottoattachthelink.com", // Set to empty to hide the button
+  resumeLink:
+    "https://drive.google.com/drive/folders/1E2DOr8XgUvi8Lk0AjWJ6Irns1kRGdSe9?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
