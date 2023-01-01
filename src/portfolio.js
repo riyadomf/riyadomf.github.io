@@ -22,10 +22,10 @@ const greeting = {
   username: "Omar Faruqe",
   title: "Hi all, I'm Omar Faruqe a.k.a Riyad",
   subTitle: emoji(
-    "Currently pursuing my bachelor's in Computer Science major. I'm a passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
+    "Currently pursuing my bachelor's in Computer Science major. I'm a Web Development enthusiast who loves to turn ideas into code. I've experience of building Web applications with some cool libraries and frameworks. Additionally, I love solving interesting CS problems."
   ),
   resumeLink:
-    "https://drive.google.com/drive/folders/1E2DOr8XgUvi8Lk0AjWJ6Irns1kRGdSe9?usp=sharing", // Set to empty to hide the button
+    "https://www.notion.so/Omar-Faruqe-Resume-92b06043ec9e47feb662a947aea3e208", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -61,13 +61,13 @@ const skillsSection = {
     emoji("⚡ Data Structures and Algorithms"),
     emoji("⚡ Problem Solving"),
     emoji("⚡ Object-oriented programming & Software design pattern"),
-    emoji("⚡ Backend Engineering"),
-    emoji("⚡ Develop Scalable Web Applications with frameworks such as Flask"),
-    emoji("⚡ Progressive Web Applications ( PWA ) using MERN stack"),
-    emoji("⚡ Design REST API"),
+    // emoji("⚡ Backend Engineering"),
+    // emoji("⚡ Develop Scalable Web Applications with frameworks such as Flask"),
+    // emoji("⚡ Progressive Web Applications ( PWA ) using MERN stack"),
+    emoji("⚡ Work with REST API"),
     emoji("⚡ Use Git & Github for Version Control and Team Projects"),
     emoji("⚡ Work with RDBMS such as MySQL & NoSQL such as MongoDB"),
-    emoji("⚡ Cryptography")
+    emoji("⚡ Basic Cryptography")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -90,14 +90,14 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
-    {
-      skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "CSS3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
+    // {
+    //   skillName: "HTML5",
+    //   fontAwesomeClassname: "fab fa-html5"
+    // },
+    // {
+    //   skillName: "CSS3",
+    //   fontAwesomeClassname: "fab fa-css3-alt"
+    // },
     {
       skillName: "React",
       fontAwesomeClassname: "fab fa-react"
@@ -106,10 +106,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
+    // {
+    //   skillName: "npm",
+    //   fontAwesomeClassname: "fab fa-npm"
+    // },
     {
       skillName: "MongoDB",
       fontAwesomeClassname: "icon-mongodb"
@@ -118,10 +118,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "MySQL",
       fontAwesomeClassname: "icon-mysql"
     },
-    {
-      skillName: "PostgreSQL",
-      fontAwesomeClassname: "icon-postgres"
-    },
+    // {
+    //   skillName: "PostgreSQL",
+    //   fontAwesomeClassname: "icon-postgres"
+    // },
     {
       skillName: "Git",
       fontAwesomeClassname: "fab fa-git-alt"
@@ -137,11 +137,11 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Linux",
       fontAwesomeClassname: "fab fa-linux"
-    },
-    {
-      skillName: "Apache",
-      fontAwesomeClassname: "icon-apache"
     }
+    // {
+    //   skillName: "Apache",
+    //   fontAwesomeClassname: "icon-apache"
+    // }
 
     // {
     //   skillName: "sass",
@@ -176,7 +176,7 @@ const educationInfo = {
       schoolName: "Shahjalal University of Science and Technology",
       logo: require("./assets/images/sust-logo.png"),
       subHeader: "B.Sc. in Computer Science & Engineering",
-      duration: "February 2018 - January 2023",
+      duration: "February 2018 - March 2023",
       desc: "Sylhet, Bangladesh"
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
