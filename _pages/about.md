@@ -13,7 +13,7 @@ I am a researcher and software engineer specializing in security and machine lea
 ======
 **B.Sc. in Computer Science & Engineering** \
 Shahjalal University of Science and Technology (SUST) \
-*Relevant coursework:* Computer Security, Machine Learning, Natural Language Processing, Software Engineering, Data Science, Cloud Computing, Data Structure and Algorithm  
+*Relevant coursework:* Computer Security, Machine Learning, Software Engineering, Data Science, Cloud Computing, Data Structure and Algorithm  
 
 🔬 Research Interest
 ======
