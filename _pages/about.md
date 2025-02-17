@@ -81,6 +81,8 @@ I have a passion for nature photography, capturing the beauty of landscapes and 
    overflow: hidden;
    border-radius: 5px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   min-height: 200px; /* Ensures space is reserved before image loads */
+   background: #f0f0f0; /* Light grey placeholder */
 }
 
 .photo-item img {
