@@ -11,8 +11,7 @@ I am a researcher and software engineer specializing in security and machine lea
 
 🎓 Education
 ======
-**B.Sc. in Computer Science & Engineering** \
-Shahjalal University of Science and Technology (SUST) \
+**B.Sc. in Computer Science & Engineering**, Shahjalal University of Science and Technology (SUST) \
 *Relevant coursework: Computer Security, Machine Learning, Software Engineering, Data Science, Cloud Computing, Data Structure and Algorithm*  
 
 🔬 Research Interest
@@ -36,45 +35,37 @@ I have a passion for nature photography, capturing the beauty of landscapes and 
 
 <div class="photo-grid" id="photo-grid" style="display:none">
    <div class="photo-item">
-      <img src="/images/1-shapla.jpg" alt="Photo 1">
+      <img src="/images/1-shapla.jpg" alt="Photo 1" loading="lazy">
    </div>
    <div class="photo-item">
-      <img src="/images/2-togor.jpg" alt="Photo 2">
+      <img src="/images/2-togor.jpg" alt="Photo 2" loading="lazy">
    </div>
-   
    <div class="photo-item">
-      <img src="/images/9-khulna.jpg" alt="Photo 9">
+      <img src="/images/9-khulna.jpg" alt="Photo 9" loading="lazy">
    </div>
-
-
    <div class="photo-item">
-      <img src="/images/5-dohs.jpg" alt="Photo 5">
+      <img src="/images/5-dohs.jpg" alt="Photo 5" loading="lazy">
    </div>
-
    <div class="photo-item">
-      <img src="/images/7-ambarkhana.jpg" alt="Photo 7">
+      <img src="/images/7-ambarkhana.jpg" alt="Photo 7" loading="lazy">
    </div>
-    <div class="photo-item">
-      <img src="/images/8-cat.jpg" alt="Photo 8">
-   </div>
-      
-
    <div class="photo-item">
-      <img src="/images/4-dohs.jpg" alt="Photo 4">
+      <img src="/images/8-cat.jpg" alt="Photo 8" loading="lazy">
    </div>
-
    <div class="photo-item">
-      <img src="/images/10-tangu.jpg" alt="Photo 10">
+      <img src="/images/4-dohs.jpg" alt="Photo 4" loading="lazy">
    </div>
-      
    <div class="photo-item">
-      <img src="/images/6-saintmartin.jpg" alt="Photo 6">
+      <img src="/images/10-tangu.jpg" alt="Photo 10" loading="lazy">
    </div>
-
    <div class="photo-item">
-      <img src="/images/3-turongchora.jpg" alt="Photo 3">
+      <img src="/images/6-saintmartin.jpg" alt="Photo 6" loading="lazy">
+   </div>
+   <div class="photo-item">
+      <img src="/images/3-turongchora.jpg" alt="Photo 3" loading="lazy">
    </div>
 </div>
+
 
 <style>
 .photo-grid {
