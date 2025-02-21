@@ -8,5 +8,5 @@ date: 2025-01-01
 location: "Dhaka, Bangladesh"
 ---
 
-I am conducting a course in [Dynamic-Learning](https://dynamic-learning.innovatorslab.net/index.php).
+I am conducting a course in [Dynamic-Learning](https://dynamic-learning.innovatorslab.net/index.php){:target="_blank"}.
 The course is about using JSF in Java EE platform and also includes concept of CDI, EJB, JPA, and Primefaces.
