@@ -9,6 +9,22 @@ redirect_from:
 
 {% include base_path %}
 
+
+<p style="text-align: center; margin-bottom: 20px;">
+    <a href="{{ site.baseurl }}/files/CV-Md_Omar_Faruqe.pdf" target="_blank" download>Download Omar's CV (PDF)</a>
+</p>
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 130%;">
+    <iframe src="{{ site.baseurl }}/files/CV-Md_Omar_Faruqe.pdf" 
+            style="position: absolute; width: 100%; height: 100%; border: none;"
+            allowfullscreen>
+    </iframe>
+</div>
+
+
+
+
+<!-- 
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
@@ -61,4 +77,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
