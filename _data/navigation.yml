@@ -31,7 +31,7 @@ main:
   - title: "Skills"
     url: /skills/
 
-  - title: "Job"
+  - title: "Experience"
     url: /job-experience/
 
   - title: "Research"
@@ -46,5 +46,38 @@ main:
   - title: "Projects"
     url: /projects/
 
-  - title: "Certifications & Achievements"
+  - title: "Achievements"
     url: /certifications-achievements/
+
+
+
+
+
+
+
+
+# Dev ordering
+
+  #     - title: "CV"
+  #   url: /cv/
+
+  # - title: "Experience" # Changed from "Job" for better clarity
+  #   url: /job-experience/
+
+  # - title: "Skills"
+  #   url: /skills/
+    
+  # - title: "Projects"
+  #   url: /projects/
+
+  # - title: "Achievements" # Changed from "Certifications & Achievements" for brevity
+  #   url: /certifications-achievements/
+
+  # - title: "Research"
+  #   url: /research-experience/
+
+  # - title: "Publications"
+  #   url: /publications/
+
+  # - title: "Teaching"
+  #   url: /teaching/
