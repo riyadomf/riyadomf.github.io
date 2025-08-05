@@ -9,11 +9,11 @@ redirect_from:
 
 I’m a software engineer and researcher specializing in software engineering, machine learning, and cybersecurity. I've developed secure, scalable enterprise Java EE applications for critical government infrastructures, translating complex offline bureaucratic processes into streamlined digital workflows.
 
-With a problem-solving mindset and a strong sense of ownership, I’ve worked across the full software development lifecycle—architecture, development, testing, and client validation—within agile teams. I actively contribute to open-source projects (notably PrimeFaces) and serve as a cybersecurity advisor on internal organizational initiatives.
+With a problem-solving mindset and a strong sense of ownership, I’ve worked across the full software development lifecycle—architecture, development, testing, and client validation—within agile teams. I contributed to open-source projects (notably PrimeFaces) and serve on a cybersecurity team that audit internal systems for security vulnerabilities.
 
-My research has been published in leading NLP venues such as EMNLP (BLP Workshop) and SemEval (NAACL), focusing on commonsense reasoning and violence detection in text. Currently, I’m exploring large language models (LLMs) and retrieval-augmented generation (RAG) for automating knowledge transfer.
+My research has been published in NLP venues such as EMNLP (BLP Workshop) and SemEval (NAACL), focusing on violence detection in text and commonsense reasoning. Currently, I’m exploring large language models (LLMs) and retrieval-augmented generation (RAG) for automating knowledge transfer.
 
-In parallel with my development and research work, I teach a course on Java Enterprise Edition (JEE) with JSF at Dynamic Learning.
+In parallel, I teach a hands-on course on Java Enterprise Edition (JEE) with JSF at Dynamic Learning.
 
 🎓 Education
 ======

@@ -11,7 +11,7 @@ redirect_from:
 
 
 <p style="text-align: center; margin-bottom: 20px;">
-    <a href="{{ site.baseurl }}/files/CV-Md_Omar_Faruqe.pdf" target="_blank" download>Download Omar's CV (PDF)</a>
+    <a href="{{ site.baseurl }}/files/CV-Md_Omar_Faruqe.pdf" target="_blank">Download Omar's CV (PDF)</a>
 </p>
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 130%;">

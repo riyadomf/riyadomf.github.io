@@ -31,10 +31,10 @@ main:
   - title: "Skills"
     url: /skills/
 
-  - title: "Job Experience"
+  - title: "Job"
     url: /job-experience/
 
-  - title: "Research Experience"
+  - title: "Research"
     url: /research-experience/
 
   - title: "Publications"
@@ -46,3 +46,5 @@ main:
   - title: "Projects"
     url: /projects/
 
+  - title: "Certifications & Achievements"
+    url: /certifications-achievements/
