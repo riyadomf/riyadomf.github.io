@@ -4,34 +4,106 @@ title: "Skills"
 permalink: /skills/
 ---
 
-## Technical Skills
+My technical expertise spans AI/ML engineering, full-stack development, and enterprise systems architecture.
+
+---
+
+## AI & Machine Learning
+
+**Core Frameworks:**  
+PyTorch, LangChain, Hugging Face Transformers, XGBoost
+
+**AI Engineering:**  
+RAG (Retrieval-Augmented Generation), Vector Databases (ChromaDB), LLM Fine-tuning (LoRA)
+
+**APIs & Tools:**  
+OpenAI API, Ollama
+
+**Specialized:**  
+Natural Language Processing
+
+---
+
+## Backend & Systems
 
 **Languages:**  
-Java, Python, JavaScript, SQL, C/C++, Shell
+Java, Python, C/C++, SQL, Shell
 
-**Frameworks & Libraries:**  
-Jakarta EE (JSF, CDI, EJB, JPA, JMS with OpenMQ), PrimeFaces, GlassFish, Flask, React
+**Enterprise Java:**  
+Jakarta EE (JSF, CDI, EJB, JPA, JMS), GlassFish
 
-**Databases & Storage:**  
-PostgreSQL, MySQL, Neo4j (Graph), MinIO (S3-compatible)
+**Python Frameworks:**  
+FastAPI, Flask
 
-**DevOps & Observability:**  
-Docker, Git, GitHub Actions (CI/CD), Ansible, Prometheus, Grafana, Loki
-
-**AI & ML:**  
-PyTorch, RAG, LangChain, Vector Databases (ChromaDB), OpenAI & Ollama APIs
+**Messaging & Async:**  
+Java Message Service (JMS with OpenMQ), Python asyncio
 
 **Security:**  
-Jakarta Security, JWT, Foundational Cryptography
+Jakarta Security, JWT, Row Level Security (RLS), OAuth 2.0
 
-**Tools:**  
-Flyway, JasperReports, LaTeX
+---
+
+## Frontend & UI
+
+**Frameworks:**  
+React, Redux, PrimeFaces
+
+---
+
+## Database & Cloud
+
+**Relational:**  
+PostgreSQL, MySQL
+
+**Graph:**  
+Neo4j
+
+**Cloud Services:**  
+Supabase (BaaS), MinIO (S3-compatible Object Storage)
+
+**ORMs & Migration:**  
+JPA, Hibernate, Flyway, Alembic
+
+---
+
+## DevOps & Infrastructure
+
+**Containerization:**  
+Docker, Docker Compose
+
+**CI/CD:**  
+GitHub Actions
+
+**Monitoring & Observability:**  
+Prometheus, Grafana, Loki
+
+**Configuration Management:**  
+Ansible
+
+**Version Control:**  
+Git, GitHub
+
+---
+
+## Tools & Platforms
+
+**Development:**  
+Linux, Jupyter Notebook
+
+**Reporting:**  
+JasperReports
+
+**Documentation:**  
+LaTeX
+
+**Cloud Platforms:**  
+Render
 
 ---
 
 ## Problem Solving & Competitive Programming
 
-- **Experience:** Solved over 500+ programming problems on various online judges.
+**Experience:** Solved 500+ programming problems across multiple online judges, with strong foundation in algorithms and data structures.
 
 <ul>
   <li><strong>Profiles:</strong> 
