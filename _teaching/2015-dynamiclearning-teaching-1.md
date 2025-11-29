@@ -2,29 +2,51 @@
 title: "Enterprise Web Development with JEE, JSF, and PrimeFaces"
 collection: teaching
 type: "Course Instructor"
-permalink: /teaching/2015-dynamiclearning-teaching-1
-venue: "Dynamic-Learning, Dynamic Solution Innovators"
-date: 2025-01-01
-location: "Dhaka, Bangladesh"
+permalink: /teaching/2024-enterprise-web-development
+venue: "Dynamic Learning, Dynamic Solution Innovators"
+date: 2024-01-01
+location: "Remote"
 ---
 
-<!-- I am conducting a course in [Dynamic-Learning](https://dynamic-learning.innovatorslab.net/index.php){:target="_blank"}.
-The course is about using JSF in Java EE platform and also includes concept of CDI, EJB, JPA, and Primefaces. -->
+I am the lead instructor for **[Enterprise Web Development with JEE, JSF, and PrimeFaces](https://dynamic-learning.innovatorslab.net/course/view.php?id=35){:target="_blank"}** at Dynamic Learning, an initiative by Dynamic Solution Innovators.
 
+**Course Overview:**  
+This course provides a comprehensive deep dive into building production-grade enterprise web applications using the Jakarta EE stack, with a focus on JSF (JavaServer Faces) and PrimeFaces component library.
 
-[Course: Enterprise Web Development with JSF and PrimeFaces](https://dynamic-learning.innovatorslab.net/course/view.php?id=35){:target="_blank"}
+**YouTube Playlist:**  
+All course lectures are available on **[YouTube](https://www.youtube.com/playlist?list=PLvzgcI0UCIWbGgvPQioP789FTLocObG3v){:target="_blank"}** for self-paced learning.
 
-[Youtube Link](https://www.youtube.com/playlist?list=PLvzgcI0UCIWbGgvPQioP789FTLocObG3v){:target="_blank"}
+---
 
+### What Students Learn
 
-This course is a Deep Dive into Enterprise web application development with JEE, JSF, and Primefaces.
+**Core Architectural Patterns:**
+*   Component-driven design principles
+*   Multi-tier architecture (View, Service, Repository layers)
+*   Separation of concerns in enterprise applications
+*   Dependency injection with CDI (Contexts and Dependency Injection)
 
-<!-- *   **Authored the complete curriculum** and served as the lead instructor for the course, designing lectures, hands-on labs, and project-based assessments.
-*   **Demonstrated core architectural patterns**, including component-driven design, multi-tier architecture (View, Service, Repository), and the separation of concerns.
-*   **Provided a deep dive into the JSF framework**, covering its request processing lifecycle, state management strategies, and the effective use of backing bean scopes.
-*   **Taught practical integration techniques** between the web tier (CDI for dependency injection) and the business logic tier (EJB for transactional services). -->
+**JSF Framework Deep Dive:**
+*   JSF request processing lifecycle and phase listeners
+*   State management strategies (ViewScoped, SessionScoped, ApplicationScoped)
+*   Backing bean patterns and best practices
+*   Navigation rules and implicit/explicit navigation
+*   Composite components and Facelets templating
 
-<!-- --- -->
+**Enterprise Integration:**
+*   Integrating JSF with EJB (Enterprise JavaBeans) for business logic
+*   JPA (Java Persistence API) for database operations
+*   Transaction management in the Jakarta EE stack
+*   RESTful service consumption from JSF applications
+
+**PrimeFaces Components:**
+*   DataTable with lazy loading, filtering, and sorting
+*   Advanced UI components (FileUpload, AutoComplete, Calendar)
+*   AJAX integration and partial page updates
+*   Responsive design with Primeflex
+
+---
+
 
 <!--
 ### **FUTURE TEACHING/MENTORSHIP ROLE**
