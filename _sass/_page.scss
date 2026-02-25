@@ -52,7 +52,7 @@
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 2px solid $primary-color;
+    border-bottom: 1px solid rgba(15, 118, 110, 0.15);
   }
 
   p,
@@ -113,12 +113,13 @@
 
 /* Highlight box for key achievements */
 .highlight-box {
-  background: linear-gradient(135deg, rgba(15, 118, 110, 0.06) 0%, rgba(13, 148, 136, 0.04) 100%);
-  border-left: 4px solid $primary-color;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.05) 0%, rgba(13, 148, 136, 0.02) 100%);
+  border-left: 3px solid rgba(15, 118, 110, 0.5);
   border-radius: 0 $border-radius $border-radius 0;
-  padding: 1em 1.25em;
-  margin: 1.5em 0;
+  padding: 1.15em 1.5em;
+  margin: 1.75em 0;
   font-size: 0.95em;
+  backdrop-filter: blur(8px);
 
   strong {
     color: $primary-color;
@@ -133,27 +134,27 @@
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1em;
-  margin: 1.5em 0;
+  gap: 1.25em;
+  margin: 1.75em 0;
 }
 
 .stat-card {
   background: #fff;
-  border: 1px solid $border-color;
+  border: none;
   border-radius: $border-radius;
-  padding: 1em 1.25em;
+  padding: 1.25em 1.5em;
   text-align: center;
   transition: $global-transition;
   box-shadow: $box-shadow;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
   }
 
   .stat-number {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 700;
     color: $primary-color;
     line-height: 1.2;
@@ -161,11 +162,11 @@
 
   .stat-label {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.78em;
     color: $gray;
-    margin-top: 0.25em;
+    margin-top: 0.35em;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
     font-weight: 500;
   }
 }
@@ -173,20 +174,21 @@
 /* Skill category cards */
 .skill-section {
   background: #fff;
-  border: 1px solid $border-color;
+  border: none;
   border-radius: $border-radius;
-  padding: 1.25em 1.5em;
+  padding: 1.5em 1.75em;
   margin-bottom: 1.25em;
   transition: $global-transition;
   box-shadow: $box-shadow;
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
   }
 
   h3 {
     margin-top: 0;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.85em;
     color: $primary-color;
     font-size: 1.05em;
   }
@@ -194,30 +196,29 @@
   .skill-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4em;
+    gap: 0.5em;
     margin-bottom: 0.5em;
   }
 
   .skill-tag {
     display: inline-block;
-    background: $lighter-gray;
+    background: #f1f5f9;
     color: $dark-gray;
-    padding: 0.25em 0.65em;
-    border-radius: 4px;
+    padding: 0.35em 0.85em;
+    border-radius: 20px;
     font-size: 0.82em;
     font-weight: 500;
-    border: 1px solid $border-color;
+    border: none;
     transition: $global-transition;
 
     &:hover {
-      background: rgba(15, 118, 110, 0.08);
-      border-color: rgba(15, 118, 110, 0.2);
+      background: rgba(15, 118, 110, 0.1);
       color: $primary-color;
+      transform: translateY(-1px);
     }
 
     &.primary {
-      background: rgba(15, 118, 110, 0.08);
-      border-color: rgba(15, 118, 110, 0.2);
+      background: rgba(15, 118, 110, 0.1);
       color: $primary-color;
       font-weight: 600;
     }
@@ -227,27 +228,30 @@
 /* Achievement badge */
 .achievement-badge {
   display: inline-block;
-  background: linear-gradient(135deg, $primary-color, lighten($primary-color, 8%));
+  background: linear-gradient(135deg, lighten($primary-color, 5%), lighten($primary-color, 15%));
   color: #fff;
-  padding: 0.3em 0.8em;
-  border-radius: 4px;
-  font-size: 0.82em;
+  padding: 0.35em 0.9em;
+  border-radius: 20px;
+  font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 0.3px;
   margin-bottom: 0.5em;
+  box-shadow: 0 2px 8px rgba(15, 118, 110, 0.2);
 }
 
 /* Project/Experience cards */
 .experience-card {
-  border: 1px solid $border-color;
+  background: #fff;
+  border: none;
   border-radius: $border-radius;
-  padding: 1.5em;
+  padding: 1.75em;
   margin-bottom: 1.5em;
   transition: $global-transition;
   box-shadow: $box-shadow;
 
   &:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
   }
 
   h3 {
