@@ -7,15 +7,34 @@ redirect_from:
   - /about.html
 ---
 
-I'm an **AI Engineer** and a **Software Engineer** with a strong foundation in machine learning, and enterprise systems. I build production-grade AI systems that combine modern LLMs with traditional ML for real-world applications.
+I build **production AI systems** and **enterprise software** that solve real-world problems at scale. My work sits at the intersection of applied machine learning, systems engineering, and NLP research — with publications at **EMNLP** and **NAACL**, and a track record of shipping code that runs in production.
 
-At Altri.ai, I architect hybrid AI scoring engines that extract insights from unstructured data using LLMs and XGBoost. I've optimized ML pipelines to achieve **10x throughput increases** and built fault-tolerant RAG systems for knowledge preservation.
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="stat-number">3</span>
+    <span class="stat-label">Publications</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">10×</span>
+    <span class="stat-label">Pipeline Speedup</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">4th / 32</span>
+    <span class="stat-label">BLP 2025 Shared Task</span>
+  </div>
+</div>
 
-At DSI, I engineer secure, scalable enterprise applications for government infrastructures using **Java EE**, transforming complex bureaucratic processes into streamlined digital workflows. I've contributed to open-source projects (notably [PrimeFaces](https://github.com/primefaces/primefaces/pull/12865)) and served on cybersecurity teams conducting vulnerability assessments.
+## What I Do
 
-My research has been published at **EMNLP** (BLP Workshop) and **NAACL** (SemEval), focusing on low-resource NLP. Most recently, I placed **4th out of 32 teams** in the Code Generation in Bangla shared task (BLP 2025) using LoRA fine-tuning and Chain-of-Thought reasoning.
+**At [Altri.ai](https://altri.ai)** — I architect hybrid AI scoring engines that combine LLM-based feature extraction with traditional ML (XGBoost) for real estate investment analysis. I optimized ML pipelines to achieve a **10× throughput increase** using async orchestration and built fault-tolerant RAG systems for institutional knowledge preservation.
 
-I also teach **Enterprise Web Development with JEE and JSF** at [Dynamic Learning](https://dynamic-learning.innovatorslab.net/), sharing practical knowledge from building production systems.
+**At [Dynamic Solution Innovators](https://dsinnovators.com/)** — I engineer secure, scalable enterprise applications for government clients (NBR, MoCAT, BCIC) using **Java EE**. I pioneered the company's first enterprise-scale JSF application, contributed to [PrimeFaces open-source](https://github.com/primefaces/primefaces/pull/12865), and serve on the internal cybersecurity team.
+
+**In Research** — I focus on low-resource NLP, most recently placing **4th out of 32 teams** in the Code Generation in Bangla shared task (BLP 2025) using LoRA fine-tuning and Chain-of-Thought reasoning.
+
+**As an Instructor** — I teach [Enterprise Web Development with JEE and JSF](https://dynamic-learning.innovatorslab.net/) at Dynamic Learning, translating production experience into practical curriculum.
+
+---
 
 🎓 Education
 ======
@@ -25,26 +44,31 @@ I also teach **Enterprise Web Development with JEE and JSF** at [Dynamic Learnin
 **Standardized Tests:**  
 GRE: 317/340 (Q: 160, V: 157, AW: 3.0) | TOEFL: 104/120 (R: 29, L: 27, S: 23, W: 25)
 
+---
+
 🔬 Research Interests
 ======
-* **Low-Resource NLP**: Code generation and text classification in low-resource languages (Bangla)
-* **AI & Security Intersection**: Adversarial ML, model robustness, secure AI system design, and using AI/ML to enhance cybersecurity
-* **Software Security**: Application security, vulnerability assessment, and secure software development practices
-* **Retrieval-Augmented Generation (RAG)**: Building knowledge transfer systems with vector databases
+* **Low-Resource NLP** — Code generation and text classification for low-resource languages (Bangla)
+* **AI & Security** — Adversarial ML, model robustness, and using AI/ML to enhance cybersecurity
+* **Retrieval-Augmented Generation** — Building knowledge transfer systems with vector databases
+
+---
 
 Beyond Work
 ======
 
 ### 🏆 Sports
-I enjoy playing football in my free time as a way to stay active and unwind.
+I play football in my free time to stay active and competitive.
 
 ### 📸 Photography
 
-I have a passion for nature photography, capturing landscapes and everyday moments.  
-*Click to reveal some of my favorite photos:*
-<button onclick="togglePhotos()">Show/Hide Photos</button>
+I'm passionate about nature photography — capturing landscapes and everyday moments.
 
-<div class="photo-grid" id="photo-grid" style="display:none">
+<button class="photo-toggle-btn" onclick="togglePhotos()" id="photo-toggle-btn">
+  <span class="photo-toggle-icon">📷</span> View My Photos
+</button>
+
+<div class="photo-grid" id="photo-grid">
    <div class="photo-item">
       <img src="/images/1-shapla.jpg" alt="Photo 1" loading="lazy">
    </div>
@@ -57,7 +81,7 @@ I have a passion for nature photography, capturing landscapes and everyday momen
    <div class="photo-item">
       <img src="/images/998.jpg" alt="Photo 998" loading="lazy">
    </div>
-      <div class="photo-item">
+   <div class="photo-item">
       <img src="/images/999.jpg" alt="Photo 999" loading="lazy">
    </div>
    <div class="photo-item">
@@ -92,10 +116,68 @@ I have a passion for nature photography, capturing landscapes and everyday momen
 
 
 <style>
+/* Photo toggle button */
+.photo-toggle-btn {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.4em;
+   padding: 0.6em 1.4em;
+   border: none;
+   border-radius: 24px;
+   background: linear-gradient(135deg, #0f766e, #14b8a6);
+   color: #fff;
+   font-family: inherit;
+   font-size: 0.9em;
+   font-weight: 600;
+   letter-spacing: 0.2px;
+   cursor: pointer;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   box-shadow: 0 2px 12px rgba(15, 118, 110, 0.25);
+   margin: 0.5em 0 1em;
+}
+
+.photo-toggle-btn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 6px 20px rgba(15, 118, 110, 0.3);
+}
+
+.photo-toggle-btn:active {
+   transform: translateY(0);
+   box-shadow: 0 2px 8px rgba(15, 118, 110, 0.2);
+}
+
+.photo-toggle-btn.active {
+   background: linear-gradient(135deg, #334155, #475569);
+   box-shadow: 0 2px 12px rgba(51, 65, 85, 0.25);
+}
+
+.photo-toggle-icon {
+   font-size: 1.1em;
+   transition: transform 0.3s ease;
+}
+
+.photo-toggle-btn:hover .photo-toggle-icon {
+   transform: scale(1.15);
+}
+
+/* Photo grid */
 .photo-grid {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   grid-gap: 10px;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 14px;
+   max-height: 0;
+   overflow: hidden;
+   opacity: 0;
+   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+               opacity 0.4s ease,
+               margin 0.4s ease;
+   margin-top: 0;
+}
+
+.photo-grid.visible {
+   max-height: 4000px;
+   opacity: 1;
+   margin-top: 0.5em;
 }
 
 .photo-item {
@@ -103,30 +185,39 @@ I have a passion for nature photography, capturing landscapes and everyday momen
    justify-content: center;
    align-items: center;
    overflow: hidden;
-   border-radius: 5px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-   min-height: 200px; /* Ensures space is reserved before image loads */
-   background: #f0f0f0; /* Light grey placeholder */
+   border-radius: 12px;
+   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08), 0 4px 24px rgba(0, 0, 0, 0.04);
+   min-height: 200px;
+   background: #f1f5f9;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-item:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .photo-item img {
    max-width: 100%;
    height: auto;
-   transition: transform 0.3s ease;
+   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo-item:hover img {
-   transform: scale(1.1);
+   transform: scale(1.06);
 }
 </style>
 
 <script>
 function togglePhotos() {
-   var x = document.getElementById("photo-grid");
-   if (x.style.display === "none") {
-      x.style.display = "grid";
+   var grid = document.getElementById("photo-grid");
+   var btn = document.getElementById("photo-toggle-btn");
+   grid.classList.toggle("visible");
+   btn.classList.toggle("active");
+   if (grid.classList.contains("visible")) {
+      btn.innerHTML = '<span class="photo-toggle-icon">✕</span> Hide Photos';
    } else {
-      x.style.display = "none";
+      btn.innerHTML = '<span class="photo-toggle-icon">📷</span> View My Photos';
    }
 }
 </script>
