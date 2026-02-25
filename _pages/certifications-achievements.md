@@ -56,6 +56,14 @@ Competed in an AI/ML challenge organized by Bangladesh University of Engineering
 
 ## 📜 Professional Certifications
 
-| Certification | Issuing Body | Credentials | Focus Areas | 
-| :--- | :--- | :--- | :--- |
-| **Certified in Cybersecurity (CC)** | ISC² | <a href="{{ site.baseurl }}/files/certifications/isc2-cc-digitalcert.pdf" target="_blank">Certificate (PDF)</a> <br/> <a href="https://www.credly.com/badges/080d28bf-8f3e-4124-aaa5-ed49855f3f85/public_url" target="_blank">Badge</a> | • Security Principles <br/> • Access Control <br/> • Network Security & SecOps <br/> • Business Continuity <br/> • Disaster Recovery <br/> • Incident Response |
+<div class="experience-card" markdown="1">
+
+### Certified in Cybersecurity (CC) — ISC²
+
+<span class="achievement-badge">🛡️ ISC² Certified</span>
+
+- **Security Principles** · Access Control · Network Security & SecOps
+- Business Continuity · Disaster Recovery · Incident Response
+- <a href="{{ site.baseurl }}/files/certifications/isc2-cc-digitalcert.pdf" target="_blank">View Certificate (PDF)</a> · <a href="https://www.credly.com/badges/080d28bf-8f3e-4124-aaa5-ed49855f3f85/public_url" target="_blank">Credly Badge</a>
+
+</div>
