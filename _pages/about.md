@@ -62,11 +62,13 @@ I play football in my free time to stay active and competitive.
 
 ### 📸 Photography
 
-I'm passionate about nature photography — capturing landscapes and everyday moments.  
-*Click to reveal some of my photos:*
-<button onclick="togglePhotos()">Show/Hide Photos</button>
+I'm passionate about nature photography — capturing landscapes and everyday moments.
 
-<div class="photo-grid" id="photo-grid" style="display:none">
+<button class="photo-toggle-btn" onclick="togglePhotos()" id="photo-toggle-btn">
+  <span class="photo-toggle-icon">📷</span> View My Photos
+</button>
+
+<div class="photo-grid" id="photo-grid">
    <div class="photo-item">
       <img src="/images/1-shapla.jpg" alt="Photo 1" loading="lazy">
    </div>
@@ -79,7 +81,7 @@ I'm passionate about nature photography — capturing landscapes and everyday mo
    <div class="photo-item">
       <img src="/images/998.jpg" alt="Photo 998" loading="lazy">
    </div>
-      <div class="photo-item">
+   <div class="photo-item">
       <img src="/images/999.jpg" alt="Photo 999" loading="lazy">
    </div>
    <div class="photo-item">
@@ -114,10 +116,68 @@ I'm passionate about nature photography — capturing landscapes and everyday mo
 
 
 <style>
+/* Photo toggle button */
+.photo-toggle-btn {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.4em;
+   padding: 0.6em 1.4em;
+   border: none;
+   border-radius: 24px;
+   background: linear-gradient(135deg, #0f766e, #14b8a6);
+   color: #fff;
+   font-family: inherit;
+   font-size: 0.9em;
+   font-weight: 600;
+   letter-spacing: 0.2px;
+   cursor: pointer;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   box-shadow: 0 2px 12px rgba(15, 118, 110, 0.25);
+   margin: 0.5em 0 1em;
+}
+
+.photo-toggle-btn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 6px 20px rgba(15, 118, 110, 0.3);
+}
+
+.photo-toggle-btn:active {
+   transform: translateY(0);
+   box-shadow: 0 2px 8px rgba(15, 118, 110, 0.2);
+}
+
+.photo-toggle-btn.active {
+   background: linear-gradient(135deg, #334155, #475569);
+   box-shadow: 0 2px 12px rgba(51, 65, 85, 0.25);
+}
+
+.photo-toggle-icon {
+   font-size: 1.1em;
+   transition: transform 0.3s ease;
+}
+
+.photo-toggle-btn:hover .photo-toggle-icon {
+   transform: scale(1.15);
+}
+
+/* Photo grid */
 .photo-grid {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   grid-gap: 10px;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 14px;
+   max-height: 0;
+   overflow: hidden;
+   opacity: 0;
+   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+               opacity 0.4s ease,
+               margin 0.4s ease;
+   margin-top: 0;
+}
+
+.photo-grid.visible {
+   max-height: 4000px;
+   opacity: 1;
+   margin-top: 0.5em;
 }
 
 .photo-item {
@@ -125,30 +185,39 @@ I'm passionate about nature photography — capturing landscapes and everyday mo
    justify-content: center;
    align-items: center;
    overflow: hidden;
-   border-radius: 8px;
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+   border-radius: 12px;
+   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08), 0 4px 24px rgba(0, 0, 0, 0.04);
    min-height: 200px;
    background: #f1f5f9;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-item:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .photo-item img {
    max-width: 100%;
    height: auto;
-   transition: transform 0.3s ease;
+   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo-item:hover img {
-   transform: scale(1.05);
+   transform: scale(1.06);
 }
 </style>
 
 <script>
 function togglePhotos() {
-   var x = document.getElementById("photo-grid");
-   if (x.style.display === "none") {
-      x.style.display = "grid";
+   var grid = document.getElementById("photo-grid");
+   var btn = document.getElementById("photo-toggle-btn");
+   grid.classList.toggle("visible");
+   btn.classList.toggle("active");
+   if (grid.classList.contains("visible")) {
+      btn.innerHTML = '<span class="photo-toggle-icon">✕</span> Hide Photos';
    } else {
-      x.style.display = "none";
+      btn.innerHTML = '<span class="photo-toggle-icon">📷</span> View My Photos';
    }
 }
 </script>
