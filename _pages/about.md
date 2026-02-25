@@ -7,15 +7,34 @@ redirect_from:
   - /about.html
 ---
 
-I'm an **AI Engineer** and a **Software Engineer** with a strong foundation in machine learning, and enterprise systems. I build production-grade AI systems that combine modern LLMs with traditional ML for real-world applications.
+I build **production AI systems** and **enterprise software** that solve real-world problems at scale. My work sits at the intersection of applied machine learning, systems engineering, and NLP research — with publications at **EMNLP** and **NAACL**, and a track record of shipping code that runs in production.
 
-At Altri.ai, I architect hybrid AI scoring engines that extract insights from unstructured data using LLMs and XGBoost. I've optimized ML pipelines to achieve **10x throughput increases** and built fault-tolerant RAG systems for knowledge preservation.
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="stat-number">3</span>
+    <span class="stat-label">Publications</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">10×</span>
+    <span class="stat-label">Pipeline Speedup</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">4th / 32</span>
+    <span class="stat-label">BLP 2025 Shared Task</span>
+  </div>
+</div>
 
-At DSI, I engineer secure, scalable enterprise applications for government infrastructures using **Java EE**, transforming complex bureaucratic processes into streamlined digital workflows. I've contributed to open-source projects (notably [PrimeFaces](https://github.com/primefaces/primefaces/pull/12865)) and served on cybersecurity teams conducting vulnerability assessments.
+## What I Do
 
-My research has been published at **EMNLP** (BLP Workshop) and **NAACL** (SemEval), focusing on low-resource NLP. Most recently, I placed **4th out of 32 teams** in the Code Generation in Bangla shared task (BLP 2025) using LoRA fine-tuning and Chain-of-Thought reasoning.
+**At [Altri.ai](https://altri.ai)** — I architect hybrid AI scoring engines that combine LLM-based feature extraction with traditional ML (XGBoost) for real estate investment analysis. I optimized ML pipelines to achieve a **10× throughput increase** using async orchestration and built fault-tolerant RAG systems for institutional knowledge preservation.
 
-I also teach **Enterprise Web Development with JEE and JSF** at [Dynamic Learning](https://dynamic-learning.innovatorslab.net/), sharing practical knowledge from building production systems.
+**At [Dynamic Solution Innovators](https://dsinnovators.com/)** — I engineer secure, scalable enterprise applications for government clients (NBR, MoCAT, BCIC) using **Java EE**. I pioneered the company's first enterprise-scale JSF application, contributed to [PrimeFaces open-source](https://github.com/primefaces/primefaces/pull/12865), and serve on the internal cybersecurity team.
+
+**In Research** — I focus on low-resource NLP, most recently placing **4th out of 32 teams** in the Code Generation in Bangla shared task (BLP 2025) using LoRA fine-tuning and Chain-of-Thought reasoning.
+
+**As an Instructor** — I teach [Enterprise Web Development with JEE and JSF](https://dynamic-learning.innovatorslab.net/) at Dynamic Learning, translating production experience into practical curriculum.
+
+---
 
 🎓 Education
 ======
@@ -25,23 +44,26 @@ I also teach **Enterprise Web Development with JEE and JSF** at [Dynamic Learnin
 **Standardized Tests:**  
 GRE: 317/340 (Q: 160, V: 157, AW: 3.0) | TOEFL: 104/120 (R: 29, L: 27, S: 23, W: 25)
 
+---
+
 🔬 Research Interests
 ======
-* **Low-Resource NLP**: Code generation and text classification in low-resource languages (Bangla)
-* **AI & Security Intersection**: Adversarial ML, model robustness, secure AI system design, and using AI/ML to enhance cybersecurity
-* **Software Security**: Application security, vulnerability assessment, and secure software development practices
-* **Retrieval-Augmented Generation (RAG)**: Building knowledge transfer systems with vector databases
+* **Low-Resource NLP** — Code generation and text classification for low-resource languages (Bangla)
+* **AI & Security** — Adversarial ML, model robustness, and using AI/ML to enhance cybersecurity
+* **Retrieval-Augmented Generation** — Building knowledge transfer systems with vector databases
+
+---
 
 Beyond Work
 ======
 
 ### 🏆 Sports
-I enjoy playing football in my free time as a way to stay active and unwind.
+I play football in my free time to stay active and competitive.
 
 ### 📸 Photography
 
-I have a passion for nature photography, capturing landscapes and everyday moments.  
-*Click to reveal some of my favorite photos:*
+I'm passionate about nature photography — capturing landscapes and everyday moments.  
+*Click to reveal some of my photos:*
 <button onclick="togglePhotos()">Show/Hide Photos</button>
 
 <div class="photo-grid" id="photo-grid" style="display:none">
@@ -103,10 +125,10 @@ I have a passion for nature photography, capturing landscapes and everyday momen
    justify-content: center;
    align-items: center;
    overflow: hidden;
-   border-radius: 5px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-   min-height: 200px; /* Ensures space is reserved before image loads */
-   background: #f0f0f0; /* Light grey placeholder */
+   border-radius: 8px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+   min-height: 200px;
+   background: #f1f5f9;
 }
 
 .photo-item img {
@@ -116,7 +138,7 @@ I have a passion for nature photography, capturing landscapes and everyday momen
 }
 
 .photo-item:hover img {
-   transform: scale(1.1);
+   transform: scale(1.05);
 }
 </style>
 
