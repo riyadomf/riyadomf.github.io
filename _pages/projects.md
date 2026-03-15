@@ -42,7 +42,7 @@ Contributed a feature enhancement to PrimeFaces (12k+ ★ on GitHub), the leadin
 <div class="experience-card" markdown="1">
 
 ### **gf: GlassFish Dev Workflow CLI**
-<small>2026 | Internal tooling for Glassfish application server</small>
+<small>2026 | <a href="https://github.com/riyadomf/glassfish-hotswap-cli" target="_blank" rel="noopener noreferrer">GitHub Repository</a></small>
 
 <span class="achievement-badge">⚡ 96% Faster Dev Cycles (2m → 5s)</span>
 
