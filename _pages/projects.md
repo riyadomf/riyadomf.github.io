@@ -41,6 +41,23 @@ Contributed a feature enhancement to PrimeFaces (12k+ ★ on GitHub), the leadin
 
 <div class="experience-card" markdown="1">
 
+### **gf: GlassFish Dev Workflow CLI**
+<small>2026 | Internal tooling for Glassfish application server</small>
+
+<span class="achievement-badge">⚡ 96% Faster Dev Cycles (2m → 5s)</span>
+
+A cross-platform CLI tool for GlassFish development that replaces IntelliJ's GlassFish plugin with a terminal-first, AI-integrated workflow. Built by reverse-engineering JVM and Mojarra internals.
+
+*   **JDWP Bytecode Hot-Swap:** Built a JDI-based hot-swap client (`HotSwap.java`) that connects to the running JVM's debug port and atomically swaps bytecode of changed classes in memory — with automatic fallback to full redeployment on structural changes.
+*   **Root Cause Analysis via Bytecode:** Diagnosed GlassFish 8 XHTML staleness by decompiling Mojarra 4.1.6's `FaceletCacheFactoryImpl` — discovered `ProjectStage`-aware `FACELETS_REFRESH_PERIOD` defaults, and solved it via Maven profile filtering.
+*   **Classloader Cache Bypass:** Enabled `.jrxml` (JasperReports) hot-reload by detecting `file://` vs `jar://` resource URLs and reading directly from the filesystem in exploded deployments.
+*   **AI-Augmented Workflow:** Integrated as a Claude Code skill (`/gf`), enabling AI-driven server lifecycle management, deployment, and hot-swap from natural language.
+*   **Stack:** Bash, Java (JDI/JDWP API), rsync, GlassFish 8, Claude Code Skills
+
+</div>
+
+<div class="experience-card" markdown="1">
+
 ### **Shopaholic: Full-Stack E-commerce Platform**
 <small>2022 | <a href="https://github.com/Nowshadjunaed/Shopaholic" target="_blank" rel="noopener noreferrer">GitHub Repository</a></small>
 
