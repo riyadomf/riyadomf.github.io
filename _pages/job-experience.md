@@ -10,7 +10,7 @@ I am a Software Engineer and AI Engineer with experience shipping production ML 
 ---
 
 ## ALTRI.AI
-**AI Engineer** | *October 2025 – Present* | Remote, US
+**AI Engineer** | Remote, US
 
 Building production AI systems for real estate investment analysis, combining modern LLMs with traditional ML to deliver actionable insights at scale.
 
