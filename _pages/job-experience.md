@@ -55,7 +55,7 @@ Core member of the engineering team, designing and building mission-critical ent
 #### **SHMS: Smart Hotel Management System**
 *A nationwide licensing and registration system for hotels and restaurants.*
 
-*   Designed a generic, **state-driven approval workflow engine**, making the logic reusable across multiple application types.
+*   Designed a generic, **state-driven Approval Workflow Engine**, making the logic reusable across multiple application types.
 *   Utilized **Aspect-Oriented Programming (AOP)** to cleanly separate cross-cutting concerns like notifications and auditing from core business logic.
 
 </div>
