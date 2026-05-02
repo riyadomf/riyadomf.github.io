@@ -26,9 +26,9 @@ I build **production AI systems** and **enterprise software** that solve real-wo
 
 ## What I Do
 
-**At [Altri.ai](https://altri.ai)** — I architect hybrid AI scoring engines that combine LLM-based feature extraction with traditional ML (XGBoost) for real estate investment analysis. I optimized ML pipelines to achieve a **10× throughput increase** using async orchestration and built fault-tolerant RAG systems for institutional knowledge preservation.
-
 **At [Dynamic Solution Innovators](https://dsinnovators.com/)** — I engineer secure, scalable enterprise applications for government clients (NBR, MoCAT, BCIC) using **Java EE**. I pioneered the company's first enterprise-scale JSF application, contributed to [PrimeFaces open-source](https://github.com/primefaces/primefaces/pull/12865), and serve on the internal cybersecurity team.
+
+**At [Altri.ai](https://altri.ai)** — I architect hybrid AI scoring engines that combine LLM-based feature extraction with traditional ML (XGBoost) for real estate investment analysis. I optimized ML pipelines to achieve a **10× throughput increase** using async orchestration and built fault-tolerant RAG systems for institutional knowledge preservation.
 
 **In Research** — I focus on low-resource NLP, most recently placing **4th out of 32 teams** in the Code Generation in Bangla shared task (BLP 2025) using LoRA fine-tuning and Chain-of-Thought reasoning.
 
