@@ -23,7 +23,7 @@ Core member of the engineering team, designing and building mission-critical ent
 ### Core Contributions
 
 *   Engineered secure and scalable **Java EE** applications for critical government infrastructures (NBR, MoCAT, BCIC), transforming complex bureaucratic processes into streamlined digital workflows.
-*   Acted as a key member of the **internal cybersecurity team**, conducting vulnerability assessments, threat modeling, and security audits across projects.
+*   Acted as a key member of the **internal Cybersecurity Team**, conducting vulnerability assessments, threat modeling, and security audits across projects.
 
 ### Key Projects
 
