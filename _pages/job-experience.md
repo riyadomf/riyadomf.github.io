@@ -5,7 +5,7 @@ permalink: /job-experience/
 author_profile: true
 ---
 
-I am a Software Engineer and AI Engineer with experience shipping production ML systems, enterprise applications, and secure infrastructure. My work spans the full stack — from architecting hybrid AI pipelines to engineering mission-critical government systems.
+I am a Software Engineer and Full-Stack AI Engineer with experience shipping production ML systems, enterprise applications, and secure infrastructure. My work spans the full stack — from architecting hybrid AI pipelines to engineering mission-critical government systems.
 
 ---
 
@@ -72,7 +72,7 @@ Core member of the engineering team, designing and building mission-critical ent
 ---
 
 ## ALTRI.AI
-**AI Engineer** | Part-time, Remote (US)
+**Full-Stack AI Engineer** | Part-time, Remote (US)
 
 Building production AI systems for real estate investment analysis, combining modern LLMs with traditional ML to deliver actionable insights at scale.
 
