@@ -7,7 +7,31 @@ author_profile: true
 
 I am a Software Engineer and Full-Stack AI Engineer with experience shipping production ML systems, enterprise applications, and secure infrastructure. My work spans the full stack — from architecting hybrid AI pipelines to engineering mission-critical government systems.
 
+
 ---
+
+## ALTRI.AI
+**Full-Stack AI Engineer** | Part-time, Remote (US)
+
+Building production AI systems for real estate investment analysis, combining modern LLMs with traditional ML to deliver actionable insights at scale.
+
+<div class="highlight-box" markdown="1">
+
+**Key Impact:** Achieved a **10× throughput increase** by refactoring data enrichment pipelines with async orchestration, significantly reducing cloud compute costs.
+
+</div>
+
+### Core Contributions
+
+*   **Hybrid AI Scoring Engine:** Architected an engine combining LLM-based feature extraction from unstructured property descriptions with XGBoost models for price prediction and investment recommendations.
+*   **Fault-Tolerant Ingestion:** Built a resilient data ingestion engine using HomeHarvest and PostgreSQL, implementing a "Delta Sync" strategy with immutable event logging to track property lifecycles without data loss.
+*   **Model Validation Pipeline:** Established a containerized training pipeline with Human-in-the-Loop validation gates, ensuring new "Challenger" models consistently outperform production "Champions" before deployment.
+*   **Full-Stack Development:** Developed a FastAPI backend and React frontend backed by Supabase, implementing Row Level Security (RLS) and distributed job locking for safe, multi-tenant concurrency.
+*   **Infrastructure & DevOps:** Dockerized the complete microservices stack (API, Scheduler, Trainer) for reproducible deployments across local environments and Render cloud infrastructure.
+
+
+---
+
 
 ## DYNAMIC SOLUTION INNOVATORS
 **Software Engineer** | *April 2023 – Present* | Dhaka, Bangladesh
@@ -16,7 +40,7 @@ Core member of the engineering team, designing and building mission-critical ent
 
 <div class="highlight-box" markdown="1">
 
-**Key Impact:** Slashed redeployment latency by **96% (2m → 5s)** by resolving a critical GlassFish hot-swap failure, accelerating team-wide development speed.
+**Key Impact:** Slashed redeployment latency by **96% (2m → 5s)** by building <a href="https://github.com/riyadomf/glassfish-hotswap-cli" target="_blank" rel="noopener noreferrer">`gf`</a>, an internal dev-workflow CLI that automates the GlassFish edit–test cycle (incremental compile, JDWP hot-swap with full-redeploy fallback, UI/JasperReports sync), accelerating team-wide development speed.
 
 </div>
 
@@ -69,26 +93,6 @@ Core member of the engineering team, designing and building mission-critical ent
 
 </div>
 
----
-
-## ALTRI.AI
-**Full-Stack AI Engineer** | Part-time, Remote (US)
-
-Building production AI systems for real estate investment analysis, combining modern LLMs with traditional ML to deliver actionable insights at scale.
-
-<div class="highlight-box" markdown="1">
-
-**Key Impact:** Achieved a **10× throughput increase** by refactoring data enrichment pipelines with async orchestration, significantly reducing cloud compute costs.
-
-</div>
-
-### Core Contributions
-
-*   **Hybrid AI Scoring Engine:** Architected an engine combining LLM-based feature extraction from unstructured property descriptions with XGBoost models for price prediction and investment recommendations.
-*   **Fault-Tolerant Ingestion:** Built a resilient data ingestion engine using HomeHarvest and PostgreSQL, implementing a "Delta Sync" strategy with immutable event logging to track property lifecycles without data loss.
-*   **Model Validation Pipeline:** Established a containerized training pipeline with Human-in-the-Loop validation gates, ensuring new "Challenger" models consistently outperform production "Champions" before deployment.
-*   **Full-Stack Development:** Developed a FastAPI backend and React frontend backed by Supabase, implementing Row Level Security (RLS) and distributed job locking for safe, multi-tenant concurrency.
-*   **Infrastructure & DevOps:** Dockerized the complete microservices stack (API, Scheduler, Trainer) for reproducible deployments across local environments and Render cloud infrastructure.
 
 <!-- 
 ###
