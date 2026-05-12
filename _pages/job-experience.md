@@ -10,28 +10,6 @@ I am a Software Engineer and Full-Stack AI Engineer with experience shipping pro
 
 ---
 
-## ALTRI.AI
-**Full-Stack AI Engineer** | Part-time, Remote (US)
-
-Building production AI systems for real estate investment analysis, combining modern LLMs with traditional ML to deliver actionable insights at scale.
-
-<div class="highlight-box" markdown="1">
-
-**Key Impact:** Achieved a **10× throughput increase** by refactoring data enrichment pipelines with async orchestration, significantly reducing cloud compute costs.
-
-</div>
-
-### Core Contributions
-
-*   **Hybrid AI Scoring Engine:** Architected an engine combining LLM-based feature extraction from unstructured property descriptions with XGBoost models for price prediction and investment recommendations.
-*   **Fault-Tolerant Ingestion:** Built a resilient data ingestion engine using HomeHarvest and PostgreSQL, implementing a "Delta Sync" strategy with immutable event logging to track property lifecycles without data loss.
-*   **Model Validation Pipeline:** Established a containerized training pipeline with Human-in-the-Loop validation gates, ensuring new "Challenger" models consistently outperform production "Champions" before deployment.
-*   **Full-Stack Development:** Developed a FastAPI backend and React frontend backed by Supabase, implementing Row Level Security (RLS) and distributed job locking for safe, multi-tenant concurrency.
-*   **Infrastructure & DevOps:** Dockerized the complete microservices stack (API, Scheduler, Trainer) for reproducible deployments across local environments and Render cloud infrastructure.
-
-
----
-
 
 ## DYNAMIC SOLUTION INNOVATORS
 **Software Engineer** | *April 2023 – Present* | Dhaka, Bangladesh
@@ -92,6 +70,28 @@ Core member of the engineering team, designing and building mission-critical ent
 *   **Assumed full ownership of the Procurement and Inventory modules**, leading the entire lifecycle from business analysis (As-Is/To-Be modeling) and database schema design to hands-on development and client delivery.
 
 </div>
+
+---
+
+
+## ALTRI.AI
+**Full-Stack AI Engineer** | Part-time, Remote (US)
+
+Building production AI systems for real estate investment analysis, combining modern LLMs with traditional ML to deliver actionable insights at scale.
+
+<div class="highlight-box" markdown="1">
+
+**Key Impact:** Achieved a **10× throughput increase** by refactoring data enrichment pipelines with async orchestration, significantly reducing cloud compute costs.
+
+</div>
+
+### Core Contributions
+
+*   **Hybrid AI Scoring Engine:** Architected an engine combining LLM-based feature extraction from unstructured property descriptions with XGBoost models for price prediction and investment recommendations.
+*   **Fault-Tolerant Ingestion:** Built a resilient data ingestion engine using HomeHarvest and PostgreSQL, implementing a "Delta Sync" strategy with immutable event logging to track property lifecycles without data loss.
+*   **Model Validation Pipeline:** Established a containerized training pipeline with Human-in-the-Loop validation gates, ensuring new "Challenger" models consistently outperform production "Champions" before deployment.
+*   **Full-Stack Development:** Developed a FastAPI backend and React frontend backed by Supabase, implementing Row Level Security (RLS) and distributed job locking for safe, multi-tenant concurrency.
+*   **Infrastructure & DevOps:** Dockerized the complete microservices stack (API, Scheduler, Trainer) for reproducible deployments across local environments and Render cloud infrastructure.
 
 
 <!-- 
