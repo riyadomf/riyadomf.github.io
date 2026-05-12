@@ -10,22 +10,6 @@ My technical expertise spans AI/ML engineering, full-stack development, and ente
 ---
 
 <div class="skill-section" markdown="1">
-<h3>🤖 AI & Machine Learning</h3>
-<div class="skill-tags">
-<span class="skill-tag primary">PyTorch</span>
-<span class="skill-tag primary">LangChain</span>
-<span class="skill-tag primary">Hugging Face Transformers</span>
-<span class="skill-tag primary">XGBoost</span>
-<span class="skill-tag">RAG Systems</span>
-<span class="skill-tag">Vector Databases (ChromaDB)</span>
-<span class="skill-tag">LLM Fine-tuning (LoRA)</span>
-<span class="skill-tag">OpenAI API</span>
-<span class="skill-tag">Ollama</span>
-<span class="skill-tag">NLP</span>
-</div>
-</div>
-
-<div class="skill-section" markdown="1">
 <h3>⚙️ Backend & Systems</h3>
 <div class="skill-tags">
 <span class="skill-tag primary">Java</span>
@@ -45,13 +29,23 @@ My technical expertise spans AI/ML engineering, full-stack development, and ente
 </div>
 
 <div class="skill-section" markdown="1">
+<h3>🤖 AI & Machine Learning</h3>
+<div class="skill-tags">
+<span class="skill-tag primary">PyTorch</span>
+<span class="skill-tag primary">LangChain</span>
+<span class="skill-tag">RAG Systems</span>
+<span class="skill-tag">Vector Databases (ChromaDB)</span>
+<span class="skill-tag">LLM Fine-tuning (LoRA)</span>
+<span class="skill-tag">NLP</span>
+</div>
+</div>
+
+
+<div class="skill-section" markdown="1">
 <h3>🔒 Security</h3>
 <div class="skill-tags">
 <span class="skill-tag primary">Jakarta Security</span>
 <span class="skill-tag">JWT</span>
-<span class="skill-tag">Row Level Security (RLS)</span>
-<span class="skill-tag">OAuth 2.0</span>
-<span class="skill-tag">Vulnerability Assessment</span>
 <span class="skill-tag">ISC² Certified (CC)</span>
 </div>
 </div>
@@ -60,7 +54,6 @@ My technical expertise spans AI/ML engineering, full-stack development, and ente
 <h3>🎨 Frontend & UI</h3>
 <div class="skill-tags">
 <span class="skill-tag primary">React</span>
-<span class="skill-tag">Redux</span>
 <span class="skill-tag">PrimeFaces</span>
 <span class="skill-tag">JavaScript</span>
 <span class="skill-tag">HTML/CSS</span>
@@ -93,7 +86,8 @@ My technical expertise spans AI/ML engineering, full-stack development, and ente
 <span class="skill-tag">Ansible</span>
 <span class="skill-tag">Git</span>
 <span class="skill-tag">Linux</span>
-<span class="skill-tag">Render</span>
+<span class="skill-tag">FreeBSD</span>
+<span class="skill-tag">ZFS</span>
 </div>
 </div>
 
