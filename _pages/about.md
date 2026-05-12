@@ -33,7 +33,7 @@ I build **production AI systems** and **enterprise software** that solve real-wo
 
 **In Research** — I focus on low-resource NLP, most recently placing **4th out of 32 teams** in the Code Generation in Bangla shared task (BLP 2025) using LoRA fine-tuning and Chain-of-Thought reasoning.
 
-**As an Instructor** — I teach [Enterprise Web Development with JEE and JSF](https://dynamic-learning.innovatorslab.net/) at Dynamic Learning, translating production experience into practical curriculum.
+**As an Instructor** — I teach [Enterprise Web Development with JEE and JSF](https://dynamic-learning.innovatorslab.net/course/view.php?id=35) at Dynamic Learning, translating production experience into practical curriculum.
 
 ---
 
