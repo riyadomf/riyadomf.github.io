@@ -35,7 +35,6 @@ Core member of the engineering team, designing and building mission-critical ent
 *A digital platform for managing tax-related appeals.*
 
 *   **Pioneered the company's first enterprise-scale JSF application**, establishing engineering guidelines and architectural best practices adopted by subsequent projects.
-*   Designed a **multi-layer architecture** (View, Service, Repository) with strict separation of concerns.
 *   Implemented **centralized RBAC** using Jakarta Security with custom form-based authentication.
 *   Integrated **Java Message Service (JMS)** for asynchronous, decoupled event handling (email/SMS notifications).
 
@@ -47,7 +46,7 @@ Core member of the engineering team, designing and building mission-critical ent
 *An internal platform designed to accelerate development by providing reusable core services.*
 
 *   **Engineered a centralized observability stack** using Prometheus, Loki, and Grafana — exposing JMX metrics from GlassFish for real-time monitoring.
-*   **Dockerized the complete application stack** (GlassFish, PostgreSQL, MinIO, RabbitMQ).
+*   **Dockerized the complete application stack** (GlassFish, PostgreSQL, MinIO).
 *   **Contributed a feature enhancement to PrimeFaces open-source** (<a href="https://github.com/primefaces/primefaces/pull/12865" target="_blank" rel="noopener noreferrer">PR #12865</a>).
 
 </div>
