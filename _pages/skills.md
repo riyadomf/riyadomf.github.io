@@ -16,7 +16,7 @@ My technical expertise spans AI/ML engineering, full-stack development, and ente
 <span class="skill-tag primary">Python</span>
 <span class="skill-tag">C/C++</span>
 <span class="skill-tag">SQL</span>
-<span class="skill-tag">Shell</span>
+<span class="skill-tag">Bash</span>
 </div>
 <div class="skill-tags" style="margin-top: 0.3em">
 <span class="skill-tag primary">Jakarta EE (JSF, CDI, EJB, JPA, JMS)</span>
