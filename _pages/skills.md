@@ -20,6 +20,7 @@ My technical expertise spans AI/ML engineering, full-stack development, and ente
 </div>
 <div class="skill-tags" style="margin-top: 0.3em">
 <span class="skill-tag primary">Jakarta EE (JSF, CDI, EJB, JPA, JMS)</span>
+<span class="skill-tag primary">Spring Boot</span>
 <span class="skill-tag primary">FastAPI</span>
 <span class="skill-tag">Flask</span>
 <span class="skill-tag">GlassFish</span>
