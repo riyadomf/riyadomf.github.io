@@ -13,4 +13,9 @@ author_profile: true
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
+  {% if post.slidesurl %}
+  <p class="archive__item-excerpt" style="margin-top: -0.5em;">
+    <a href="{{ post.slidesurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer"><strong>View slides &rarr;</strong></a>
+  </p>
+  {% endif %}
 {% endfor %}
