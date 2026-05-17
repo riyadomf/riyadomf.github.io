@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I build **production AI systems** and **enterprise software** that solve real-world problems at scale. My work sits at the intersection of applied machine learning, systems engineering, and NLP research — with publications at **EMNLP** and **NAACL**, and a track record of shipping code that runs in production.
+I build backend systems, enterprise applications, and production AI infrastructure with a focus on correctness, operational reliability, and maintainable architecture. My work spans government-scale Jakarta EE systems, distributed ML pipelines, and low-resource NLP research, with publications at EMNLP and NAACL.
 
 <div class="stats-grid">
   <div class="stat-card">
@@ -16,7 +16,7 @@ I build **production AI systems** and **enterprise software** that solve real-wo
   </div>
   <div class="stat-card">
     <span class="stat-number">10×</span>
-    <span class="stat-label">Pipeline Speedup</span>
+    <span class="stat-label">LLM Pipeline Throughput</span>
   </div>
   <div class="stat-card">
     <span class="stat-number">4th / 32</span>
@@ -26,15 +26,14 @@ I build **production AI systems** and **enterprise software** that solve real-wo
 
 ## What I Do
 
-**At [Dynamic Solution Innovators](https://dsinnovators.com/)** — I engineer secure, scalable enterprise applications for government clients (NBR, MoCAT, BCIC) using **Java EE**. I pioneered the company's first enterprise-scale JSF application, contributed to [PrimeFaces open-source](https://github.com/primefaces/primefaces/pull/12865), and open-sourced [`gf`](https://github.com/riyadomf/glassfish-hotswap-cli) (an internal GlassFish dev-workflow CLI that cut redeploy latency from 2m to 5s).
+**At [Dynamic Solution Innovators](https://dsinnovators.com/)** — I build large-scale enterprise systems for government clients (NBR, MoCAT, BCIC) using Jakarta EE, with a focus on backend architecture, workflow systems, and operational tooling. I designed the foundational architecture for DSI’s first enterprise-scale JSF application, contributed to [PrimeFaces open-source](https://github.com/primefaces/primefaces/pull/12865), and open-sourced [`gf`](https://github.com/riyadomf/glassfish-hotswap-cli), a GlassFish workflow CLI that reduced redeploy latency from ~2 minutes to ~5 seconds.
 
-
-**At [Altri.ai](https://altri.ai)** — I architect hybrid AI scoring engines that combine LLM-based feature extraction with traditional ML (XGBoost) for real estate investment analysis. I optimized ML pipelines to achieve a **10× throughput increase** using async orchestration and built fault-tolerant RAG systems for institutional knowledge preservation.
-
+**At [Altri.ai](https://altri.ai)** — I build AI-assisted real estate analysis systems combining LLM enrichment, traditional ML valuation models, and large-scale property ingestion pipelines. My work focuses on asynchronous processing, distributed job coordination, and production ML workflows, including a bounded-concurrency enrichment pipeline that improved throughput by ~10×.
 
 **In Research** — I focus on low-resource NLP, most recently placing **4th out of 32 teams** in the Code Generation in Bangla shared task (BLP 2025) using LoRA fine-tuning and Chain-of-Thought reasoning.
 
-**As an Instructor** — I teach [Enterprise Web Development with JEE and JSF](https://dynamic-learning.innovatorslab.net/course/view.php?id=35) at Dynamic Learning, translating production experience into practical curriculum.
+**As an Instructor** — I teach [Enterprise Web Development with JEE and JSF](https://dynamic-learning.innovatorslab.net/course/view.php?id=35) at Dynamic Learning, turning production engineering patterns into practical coursework.
+
 
 ---
 
@@ -48,11 +47,13 @@ GRE: 317/340 (Q: 160, V: 157, AW: 3.0) | TOEFL: 104/120 (R: 29, L: 27, S: 23, W:
 
 ---
 
-🔬 Research Interests
+🔬 Research & Engineering Interests
 ======
-* **Low-Resource NLP** — Code generation and text classification for low-resource languages (Bangla)
-* **AI & Security** — Adversarial ML, model robustness, and using AI/ML to enhance cybersecurity
-* **Retrieval-Augmented Generation** — Building knowledge transfer systems with vector databases
+
+* **Backend & Distributed Systems** — Enterprise application architecture, workflow engines, observability, and operational tooling
+* **Low-Resource NLP** — Code generation and text classification for Bangla and other low-resource languages
+* **AI Infrastructure & Retrieval Systems** — LLM enrichment pipelines, RAG systems, and production ML workflows
+* **AI & Security** — Adversarial ML, model robustness, and AI-assisted cybersecurity
 
 ---
 
