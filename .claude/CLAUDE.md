@@ -34,6 +34,7 @@ Docker alternative: `docker build -t jekyll-site .` then run the container per R
 - New publication: drop a new file in `_publications/` matching the existing pattern; no index file to update.
 - Author/contact info, social handles, SEO, analytics IDs all live in `_config.yml` — change there, not in pages.
 - Adding to nav: edit `_data/navigation.yml`.
+- Don't use em dashes (—) in page copy; they read as AI-generated. Use commas, periods, or parentheses instead.
 
 ## Out of repo
 - **CV LaTeX source is NOT in this repo.** Only compiled PDFs in `files/` get updated here. CV markdown page (`_pages/cv.md`) is hand-maintained separately from the PDFs.
