@@ -21,7 +21,7 @@ My primary focus is backend systems engineering, enterprise application architec
 </div>
 
 <div class="skill-tags" style="margin-top: 0.3em">
-<span class="skill-tag primary">Jakarta EE (CDI, EJB, JPA, JMS)</span>
+<span class="skill-tag primary">Jakarta EE (JSF, CDI, EJB, JPA, JMS)</span>
 <span class="skill-tag primary">Spring Boot</span>
 <span class="skill-tag primary">FastAPI</span>
 <span class="skill-tag">Flask</span>
@@ -95,7 +95,6 @@ My primary focus is backend systems engineering, enterprise application architec
 <h3>🎨 Frontend</h3>
 
 <div class="skill-tags">
-<span class="skill-tag primary">JSF</span>
 <span class="skill-tag">React</span>
 <span class="skill-tag">PrimeFaces</span>
 </div>
