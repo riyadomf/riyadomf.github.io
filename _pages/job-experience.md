@@ -78,7 +78,7 @@ Building AI-assisted real estate analysis systems that combine LLM-based enrichm
 *   Designed the **three-stage property scoring pipeline** separating LLM feature extraction, valuation models, and deterministic financial heuristics, enabling each layer to be independently retrained and tested.
 *   Rebuilt the LLM enrichment pipeline around **`asyncio.gather`** with bounded concurrency and atomic batch commits, allowing failed batches to resume without reprocessing completed LLM calls and improving throughput by **~10×** over the prior sequential pipeline.
 *   Built the property ingestion pipeline on **HomeHarvest** and **PostgreSQL** using content-hash deduplication and incremental delta-syncing, preventing duplicate enrichment runs while preserving historical listing state across repeated scrapes.
-*   Implemented **distributed job coordination on PostgreSQL** using **`SELECT FOR UPDATE`** locks with automatic stale-lock recovery, allowing multiple scheduler replicas to safely process long-running enrichment and training jobs.
+*   Implemented **distributed job coordination on PostgreSQL** using **`SELECT FOR UPDATE`** row-level locks with automatic stale-lock recovery, allowing multiple scheduler replicas to safely process long-running enrichment and training jobs.
 *   Built the ML training pipeline with **Champion/Challenger validation** on a curated holdout datasets and a manual promotion gate, preventing unverified models from triggering production-wide rescoring.
 
 <!-- 
