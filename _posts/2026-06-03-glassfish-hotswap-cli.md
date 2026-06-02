@@ -70,7 +70,7 @@ The result is a tiny tool called `gf`.
 
 It's mostly Bash. About 200 lines of Java. And it reduced my feedback loop from roughly two minutes to somewhere between three and six seconds.
 
-Five seconds is the number I use in my head now.
+![glassfish-hotswap-cli demo](https://raw.githubusercontent.com/riyadomf/glassfish-hotswap-cli/main/docs/demo.gif)
 
 
 
@@ -137,8 +137,6 @@ I was looking for the fastest path through the most common case.
 This is what the workflow looks like now:
 
 ![./gf sync -v output](https://raw.githubusercontent.com/riyadomf/glassfish-hotswap-cli/main/docs/demo-sync-output.png)
-
-![glassfish-hotswap-cli demo](https://raw.githubusercontent.com/riyadomf/glassfish-hotswap-cli/main/docs/demo.gif)
 
 That's it.
 
