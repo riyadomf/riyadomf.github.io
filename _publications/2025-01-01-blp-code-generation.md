@@ -6,7 +6,7 @@ permalink: /publication/2025-01-01-blp-code-generation
 excerpt: 'This paper presents a system for code generation in low-resource languages (Bangla) using LoRA fine-tuning and Chain-of-Thought reasoning.'
 date: 2025-01-01
 venue: 'Proceedings of the Third Workshop on Bangla Language Processing (BLP-2025)'
-paperurl: ''
+paperurl: 'https://aclanthology.org/2025.banglalp-1.65.pdf'
 citation: 'O Riyad, et al. (2025). <i>BLP workshop at IJCNLP-AACL</i>.'
 ---
 

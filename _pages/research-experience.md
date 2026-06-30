@@ -19,7 +19,7 @@ My research focuses on Natural Language Processing for low-resource languages, m
 *   Investigated code generation in Bangla by fine-tuning open-source models (Llama 3, TigerLLM, Qwen) using parameter-efficient **LoRA** adapters to overcome data scarcity.
 *   Enhanced reasoning via **Chain-of-Thought (CoT)** prompting and a self-refinement loop that iteratively critiques and corrects generated code based on execution feedback.
 *   Conducted rigorous error analysis to identify failure modes in code generation tasks.
-*   **Publication:** <a href="">AdversaryAI at BLP-2025 Task 2: A Think, Refine, and Generate (TriGen) System with LoRA and Self-Refinement for Code Generation</a>
+*   **Publication:** <a href="https://aclanthology.org/2025.banglalp-1.65.pdf">AdversaryAI at BLP-2025 Task 2: A Think, Refine, and Generate (TriGen) System with LoRA and Self-Refinement for Code Generation</a>
 
 </div>
 
