@@ -1,0 +1,8 @@
+# LaTeX build artifacts (compile locally; the served PDF lives in ../files/)
+*.aux
+*.log
+*.out
+*.pdf
+*.fls
+*.fdb_latexmk
+*.synctex.gz

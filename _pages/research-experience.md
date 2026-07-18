@@ -11,6 +11,19 @@ My research focuses on Natural Language Processing for low-resource languages, m
 
 <div class="experience-card" markdown="1">
 
+### **Agentic Site Reliability Engineering: AI for SRE**
+<small>2026 | Research Intern, advised by Prof. Tianyin Xu (UIUC)</small>
+
+<span class="achievement-badge">🔬 Contributing to SREGym — Benchmark for AI SRE Agents</span>
+
+*   Contributing to **SREGym**, an open-source benchmark for evaluating AI agents on realistic cloud-native system failures, through case studies and postmortem analysis of real-world outages projected into reproducible benchmark problems.
+*   Studied agent failure modes documented in the **SREGym** and **Stratus** papers (cross-layer reasoning gaps, greedy diagnosis anchoring, reward hacking).
+*   Designing fault scenarios and evaluation oracles that target these weaknesses and quantify where state-of-the-art SRE agents fail to reason across system layers, from control-plane admission to network policy.
+
+</div>
+
+<div class="experience-card" markdown="1">
+
 ### **Code Generation in Bangla: Low-Resource Language Adaptation**
 <small>2025 | Shared Task at the BLP Workshop, co-located with IJCNLP-AACL</small>
 

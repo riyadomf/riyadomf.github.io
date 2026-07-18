@@ -11,6 +11,22 @@ Selected projects demonstrating my work across AI/ML systems, enterprise enginee
 
 <div class="experience-card" markdown="1">
 
+### **Open Source: SREGym Fault Scenario Contribution**
+<small>2026 | <a href="https://github.com/SREGym/SREGym/pull/886" target="_blank" rel="noopener noreferrer">Merged PR #886</a></small>
+
+<span class="achievement-badge">🔧 Merged into SREGym (AI SRE Benchmark)</span>
+
+Contributed a fault scenario to **SREGym**, an open-source benchmark for evaluating AI agents on realistic system failures.
+
+*   **Reproduced a real Kubernetes incident:** modeled a documented admission-control failure (<a href="https://github.com/kubernetes/kubernetes/issues/128162" target="_blank" rel="noopener noreferrer">issue #128162</a>) where multiple mutating admission webhooks' cumulative timeouts exceed the API server's global admission deadline, silently blocking all pod creation with no crash.
+*   **Realistic, agent-resistant design:** used real HTTPS admission servers and ecosystem-named decoy webhooks (not dummy backends) so agents can't dismiss the setup, plus a deliberate "near-miss" policy that looks corrective but fails.
+*   **Reward-hack-resistant oracle:** built a four-property mitigation oracle culminating in a fresh probe-pod admission test that rejects fixes masking the symptom (e.g., deleting all webhooks) without restoring the required control-plane path.
+*   **Stack:** Python, Kubernetes (admission webhooks, NetworkPolicy, RBAC), Docker/kind
+
+</div>
+
+<div class="experience-card" markdown="1">
+
 ### **gf: GlassFish Dev Workflow CLI**
 <small>2026 | <a href="https://github.com/riyadomf/glassfish-hotswap-cli" target="_blank" rel="noopener noreferrer">GitHub Repository</a></small>
 

@@ -115,7 +115,7 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Md Omar Faruqe Riyad} \\ \vspace{1pt}
-    \small \faPhone\ (+880) 1820079909 $|$ \faEnvelope\ \href{mailto:riyad.omf@gmail.com}{riyad.omf@gmail.com} $|$ 
+    \small \faGraduationCap\ \href{https://scholar.google.com/citations?user=dq62ho4AAAAJ&hl=en&authuser=2}{Google Scholar} $|$ \faEnvelope\ \href{mailto:riyad.omf@gmail.com}{riyad.omf@gmail.com} $|$
     \faLinkedin\ \href{https://linkedin.com/in/riyadomf}{riyadomf} $|$
     \faGithub\ \href{https://github.com/riyadomf}{riyadomf} $|$
     \faGlobe\ \href{https://riyadomf.github.io}{riyadomf.github.io}
@@ -228,6 +228,13 @@
 \section{Projects}
 \resumeSubHeadingListStart
 
+\resumeProjectHeading
+{\textbf{SREGym Fault Scenario Contribution} \href{https://github.com/SREGym/SREGym/pull/886}{\faExternalLink*} $|$ \emph{Python, Kubernetes, Docker}}{2026}
+\resumeItemListStart
+    \resumeItem{Reproduced a documented Kubernetes admission-control incident (\href{https://github.com/kubernetes/kubernetes/issues/128162}{issue \#128162}) where multiple mutating admission webhooks' cumulative timeouts exceed the API server's global admission deadline, silently blocking all pod creation.}
+    \resumeItem{Designed a four-property mitigation oracle with a fresh probe-pod admission test that rejects reward-hack fixes masking the symptom (e.g., deleting all webhooks) without restoring the required control-plane network path.}
+\resumeItemListEnd
+
 % \resumeProjectHeading
 % {\textbf{gf: GlassFish Dev Workflow CLI} \href{https://github.com/riyadomf/glassfish-hotswap-cli}{\faExternalLink*} $|$ \emph{Java, Bash, GlassFish, JDI/JDWP}}{2026}
 % \resumeItemListStart
@@ -292,7 +299,13 @@
 
 \section{Research \& Publications}
   \resumeSubHeadingListStart
-  
+
+    \resumeProjectHeading
+        {\textbf{AI for Site Reliability Engineering (SREGym)} $|$ \emph{Research Intern, advised by Prof. Tianyin Xu}}{UIUC, 2026}
+        \resumeItemListStart
+            \resumeItem{Contributing to SREGym, an open-source benchmark evaluating AI agents on realistic cloud-native failures; studying agent failure modes and designing fault scenarios and evaluation oracles that expose cross-layer reasoning and reward-hacking weaknesses in state-of-the-art agents.}
+        \resumeItemListEnd
+
     \resumeProjectHeading
         {\textbf{AdversaryAI at BLP-2025 Task 2} \href{https://aclanthology.org/2025.banglalp-1.65.pdf}{\faExternalLink*}}{BLP 2025, IJCNLP-AACL}
         \resumeItemListStart
@@ -322,11 +335,11 @@
 %-----------HONORS & AWARDS-----------
 \section{Honors, Awards \& Certifications}
     \resumeSubHeadingListStart
-        \resumeItem{\textbf{4th Place} out of 32 teams -- Code Generation in Bangla Shared Task, IJCNLP-AACL 2025} \href{https://noshinulfat.github.io/blp25_code_generation_task/\#/home:~:text=AdversaryAI,0.850}{[Leaderboard]}
-        \resumeItem{\textbf{6th Place} out of 30 teams -- DSI AI Agent Hackathon, 2025} \href{https://github.com/riyadomf/knowledgeRelay/blob/main/AI%20Agent%20Hackathon%20Leaderboard%20Report.pdf}{[Leaderboard]}
-        \resumeItem{\textbf{Top 20} (Rank 12 post-eval) -- Violence Inciting Text Detection (VITD), BLP 2023} \href{https://github.com/blp-workshop/blp_task1}{[Leaderboard]}
+        \resumeItem{\textbf{4th Place} out of 32 teams -- Code Generation in Bangla Shared Task, IJCNLP-AACL 2025 \href{https://noshinulfat.github.io/blp25_code_generation_task/\#/home:~:text=AdversaryAI,0.850}{[Leaderboard]}}
+        \resumeItem{\textbf{6th Place} out of 30 teams -- DSI AI Agent Hackathon, 2025 \href{https://github.com/riyadomf/knowledgeRelay/blob/main/AI\%20Agent\%20Hackathon\%20Leaderboard\%20Report.pdf}{[Leaderboard]}}
+        \resumeItem{\textbf{Top 20} (Rank 12 post-eval) -- Violence Inciting Text Detection (VITD), BLP 2023 \href{https://github.com/blp-workshop/blp_task1}{[Leaderboard]}}
         \resumeItem{\textbf{Ranked 11th} -- BUET CSE Fest 2022 AI Contest}
-        \resumeItem{\textbf{Certified in Cybersecurity (CC)} -- ISC2} \href{https://www.credly.com/badges/080d28bf-8f3e-4124-aaa5-ed49855f3f85/public_url}{[Badge]}
+        \resumeItem{\textbf{Certified in Cybersecurity (CC)} -- ISC2 \href{https://www.credly.com/badges/080d28bf-8f3e-4124-aaa5-ed49855f3f85/public_url}{[Badge]}}
         \resumeItem{\textbf{Solved 500+} algorithmic problems on Codeforces, LeetCode, and LightOJ.}
     \resumeSubHeadingListEnd
 
@@ -373,15 +386,15 @@
 
      \textbf{Languages}{: Java, Python, SQL, Bash, JavaScript, C/C++} \\
 
-     \textbf{Backend \& Systems}{: Jakarta EE (JSF, CDI, EJB, JPA, JMS), Spring Boot, FastAPI, GlassFish, AspectJ} \\
+     \textbf{Backend \& Systems}{: Jakarta EE (JSF, CDI, EJB, JPA, JMS), Spring Boot, FastAPI, GlassFish, AspectJ, Kafka} \\
 
      \textbf{AI \& ML Systems}{: PyTorch, LLMs, RAG, LangChain, ChromaDB, XGBoost, LoRA Fine-tuning, NLP} \\
 
-     \textbf{Databases \& Storage}{: PostgreSQL, MySQL, Neo4j, Supabase, MinIO, Hibernate/JPA, Flyway, Alembic} \\
+     \textbf{Databases \& Storage}{: PostgreSQL, MySQL, Redis, Neo4j, Supabase, MinIO, Hibernate/JPA, Flyway, Alembic} \\
 
      \textbf{Security}{: OWASP Top 10, RBAC, Jakarta Security, JWT} \\
 
-     \textbf{Infrastructure \& Observability}{: Docker, Git, GitHub Actions, Prometheus, Grafana, Loki, Nginx, Ansible, ZFS} \\
+     \textbf{Infrastructure \& Observability}{: Docker, Kubernetes, Git, GitHub Actions, Prometheus, Grafana, Loki, Nginx, Ansible, ZFS} \\
      
     \textbf{Frontend}{: PrimeFaces, React}
 
