@@ -1,0 +1,105 @@
+% YAAC Another Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/yaac-another-awesome-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%Section: Work Experience at the top
+% \sectionTitle{Professional Experience}{\faSuitcase}
+% %\renewcommand{\labelitemi}{$\bullet$}
+% \begin{experiences}
+%   \experience
+%     {Present}   {Software Engineer}{Dynamic Solution Innovators}{Bangladesh}
+%     {April 2023} {
+%                       \begin{itemize}
+%                         \item Spearheaded security-sensitive web applications for the Bangladesh Government and USAID, including \textbf{E-Appeal} and \textbf{HMS}.
+%                         \item Led the \textbf{Training} and \textbf{User Acceptance Testing} (UAT) of E-Appeal.
+%                         \item Integrated Java Messaging Service (JMS) for decoupled and asynchronous communication between systems.
+%                         \item Implemented notification system (In-app and email) using AOP and JMS to manage cross-cutting concerns.
+%                         \item Managed containerized deployments of the GlassFish server, streamlining resource allocation and server stability.
+%                         \item Enhanced monitoring by integrating \textbf{Logback}, \textbf{Loki}, and \textbf{Grafana} for centralized logging.
+%                       \end{itemize}
+%                     }
+%                     {Java, JEE, JSF, Primefaces, CDI, EJB, JPA, PostgreSQL, JasperReports, JMS, OpenMQ, Glassfish}
+%   \emptySeparator
+
+% \end{experiences}
+
+
+
+\sectionTitle{Job Experience}{\faSuitcase}
+\begin{experiences}
+  \experience
+    {Present}   {AI Engineer}{Altri.ai}{US (part-time)}
+    {Oct 2025} {
+      \begin{itemize}
+        \item \textbf{Architected a Hybrid AI Scoring Engine:} Designed a dual-model system integrating XGBoost for price forecasting and OpenAI LLMs for semantic analysis of property descriptions, synthesizing structured and unstructured data into actionable investment grades.
+        \item \textbf{Performance Engineering:} Refactored the data enrichment pipeline using Python asyncio and coroutines, achieving a 10x increase in throughput and reducing cloud compute costs by parallelizing I/O-bound LLM operations.
+        \item \textbf{Event-Driven Data Pipeline:} Built a fault-tolerant ingestion engine using HomeHarvest and PostgreSQL. Implemented a "Delta Sync" strategy with immutable event logging to track complex property lifecycles (Active $\to$ Sold) without data loss.
+        \item \textbf{Production MLOps Workflow:} Established a containerized training pipeline with Human-in-the-Loop validation gates, ensuring new "Challenger" models statistically outperform production "Champions" before deployment.
+        \item \textbf{Secure Full-Stack Architecture:} Developed a FastAPI backend and React frontend backed by Supabase. Implemented robust security via Row Level Security (RLS) and distributed job locking for safe, multi-tenant concurrency.
+        \item \textbf{DevOps \& Infrastructure:} Dockerized the complete microservices stack (API, Scheduler, Trainer) for reproducible deployments across local environments and Render cloud infrastructure.
+      \end{itemize}
+    }
+    {Python, RAG, LLM, FastApi, React, PostgreSQL}
+  \emptySeparator
+\end{experiences}
+
+\vspace{-2em}
+
+\begin{experiences}
+  \experience
+    {Present}   {Software Engineer}{Dynamic Solution Innovators}{Bangladesh}
+    {April 2023} {
+      \begin{itemize}
+        \item \textbf{Enterprise Digital Transformation:} Engineered security-critical government applications, transforming complex offline bureaucracies into streamlined, automated digital workflows.
+        % \item Delivered projects within an Agile framework, contributing to all phases of the SDLC from requirements analysis, system design, and R\&D to deployment and UAT — while ensuring best practices in backend architecture, performance, and meeting project milestones.
+        \item \textbf{Security Engineering:} Conducted vulnerability assessments and security audits as a key member of the internal cybersecurity team, ensuring compliance with government data protection standards.
+        \item \textbf{DevOps Optimization:} Accelerated team-wide development velocity by resolving a critical GlassFish hot-swap failure, slashing redeployment latency by 96\% (2m $\to$ 5s).
+      \end{itemize}
+
+    \vspace{0.5em}
+
+      \textbf{Key Projects:}
+      \begin{itemize}[leftmargin=1.3em,label={}]
+        \vspace{0.3em}
+        \item \textbf{E-Appeal (NBR • USAID)}
+        \begin{itemize}
+          \item Pioneered the company's first large-scale JSF application, establishing engineering guidelines.
+          \item Designed an \textbf{event-driven architecture} using JMS to decouple services, ensuring high availability and fault tolerance.
+          % \item Led technical client validation sessions and User Acceptance Testing (UAT) across the country.
+        \end{itemize}
+
+      \vspace{0.3em}
+        \item \textbf{Project Scratch} \\
+        {\small\textit{Internal reusable Core Services Platform to accelerate development.}}
+        \begin{itemize}
+          \item \textbf{Observability \& Infrastructure:} Engineered a centralized monitoring stack (Prometheus, Loki, Grafana) and dockerized the full legacy stack (GlassFish, PostgreSQL) for consistent local development.
+          \item Developed a reusable Lazy Data Model component and \textbf{contributed a related feature enhancement to the official PrimeFaces open-source library}.
+          \href{https://github.com/primefaces/primefaces/pull/12865}{(PR \#12865)}
+        \end{itemize}
+
+      \vspace{0.3em}
+        \item \textbf{SHMS (Smart Hotel Management System)} \\
+        {\small\textit{Nationwide licensing and registration system for hotels and restaurants }}
+        \begin{itemize}
+          \item Contributed to the design and implementation of a \textbf{state-driven approval workflow}, reusable across multiple application types, minimizing code duplication
+          \item Utilized \textbf{AOP} to cleanly separate cross-cutting concerns like notifications from core business logic.
+        \end{itemize}
+
+      \vspace{0.3em}
+        \item \textbf{BCIC-ERP} \\
+        {\small\textit{End-to-end Integrated ERP system for process automation across 12 independent modules}}
+        \begin{itemize}
+          \item \textbf{Assumed full ownership} of the Procurement and Inventory module, leading the process from business analysis (As-Is/To-Be modeling) and database schema design to hands-on development and successful client delivery.
+        \end{itemize}
+      \end{itemize}
+    }
+    {Java, JEE, JSF, Primefaces, CDI, EJB, JPA, PostgreSQL, JMS, Glassfish, Prometheus, Grafana, Loki}
+  \emptySeparator
+\end{experiences}
+

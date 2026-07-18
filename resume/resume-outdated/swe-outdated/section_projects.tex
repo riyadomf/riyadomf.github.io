@@ -1,0 +1,62 @@
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+%Section: Project
+\sectionTitle{Projects and Open Source Contribution}{\faLaptop}
+
+\begin{projects}
+        \project
+        {KnowledgeRelay: AI-based Knowledge Transfer Agent}{2025}
+        {\github{riyadomf/knowledgeRelay}}
+        	{
+            Built a RAG system to preserve project-specific knowledge base and assist new team members via contextual Q\&A.
+              \begin{itemize}
+                    \item Engineered a multi-stage knowledge ingestion pipeline that automatically generates question-answer pairs from documents to fine-tune the retrieval process.
+
+                    \item Integrated ChromaDB with vector embeddings and metadata-based filtering for source grounded efficient retrieval.
+                    
+                    \item Implemented a contextualize\_qa\_chain to rephrase user queries using chat history for more accurate retrieval.
+              \end{itemize}
+}
+	{Python, FastAPI, LangChain, ChromaDB, OpenAI, Ollama, React}
+
+
+
+        \project
+        {PrimeFaces: JPALazyDataModel Feature Enhancement}{2024}
+        {\github{primefaces/primefaces/pull/12865}}
+        	{Contributed to the PrimeFaces open-source library by adding the ability to inject custom FilterMeta into the JPALazyDataModel component. This enhancement allows developers to perform advanced, customizable filtering within DataTables.}
+	{Java, JSF, Primefaces, JPA}
+
+    
+	\project
+	{Shopaholic}{2022}
+        {\github{Nowshadjunaed/Shopaholic}}
+        	{Built a full-stack e-commerce platform connecting customers, banks, and suppliers.}
+	{JavaScript,Node.js,Express.js,MongoDB,React,Redux}
+ % {\website{https://www.simplycity.nc}{https://www.simplycity.nc} \website{https://innovation.engie.com/fr/news/actus/territoires/simply-city-lappli-qui-simplifie-la-ville-au-ces-2018-avec-engie/8156}{Présentation CES 2018} } 
+ 
+	\project
+	{Brevity}{2021}
+	% {\github{riyadomf/Brevity} \website{https://brevity42.herokuapp.com/}{Live Demo}}
+	{\github{riyadomf/Brevity}}
+	{A platform designed to connect beginners with experts in various fields to share knowledge, resources, and help others.}
+	{Python, Flask, MySQL, JavaScript, HTML, CSS}
+
+ % 	\project
+	% {Disaster-Alert}{2022}
+	% {
+ %         \github{riyadomf/Disaster-Alert} 
+ %         % \website{https://brevity42.herokuapp.com/}{Live Demo}
+ %         }
+	% {Developed a hackathon project focused on providing daily weather updates and a subscription-based notification system for natural disasters.}
+	% {JavaScript,Node.js, Express.js, MongoDB, React}
+\end{projects}
