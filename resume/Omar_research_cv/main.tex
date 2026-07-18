@@ -1,0 +1,347 @@
+%-------------------------
+% Resume in Latex
+% Author : Md Omar Faruqe Riyad
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=NavyBlue,
+    urlcolor=NavyBlue,
+    citecolor=NavyBlue
+}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Md Omar Faruqe Riyad} \\ \vspace{1pt}
+    \small \faGraduationCap\ \href{https://scholar.google.com/citations?user=dq62ho4AAAAJ&hl=en&authuser=2}{Google Scholar} $|$ \faEnvelope\ \href{mailto:riyad.omf@gmail.com}{riyad.omf@gmail.com} $|$ 
+    \faLinkedin\ \href{https://linkedin.com/in/riyadomf}{riyadomf} $|$
+    \faGithub\ \href{https://github.com/riyadomf}{riyadomf} $|$
+    \faGlobe\ \href{https://riyadomf.github.io}{riyadomf.github.io}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shahjalal University of Science and Technology (SUST)}{Sylhet, Bangladesh}
+      {B.Sc. in Computer Science and Engineering; CGPA: 3.53/4.00 (Last two years: 3.83)}{2018 -- 2023}
+      \resumeItemListStart
+        \resumeItem{GRE: 317/340 (Q: 160, V: 157, AW: 3.0)}
+        \resumeItem{TOEFL: 104/120 (R: 29, L: 27, S: 23, W: 25)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH & PUBLICATIONS-----------
+\section{Research \& Publications}
+  \resumeSubHeadingListStart
+  
+    % PUBLICATION 1 (The Code Generation one)
+    \resumeProjectHeading
+        {\textbf{AdversaryAI at BLP-2025 Task 2} \href{https://aclanthology.org/2025.banglalp-1.65.pdf}{\faExternalLink*}}{BLP 2025, IJCNLP-AACL}
+        \resumeItemListStart
+            \resumeItem{\textbf{Low-Resource Adaptation:} Investigated low-resource language code generation by fine-tuning open-source models (Llama 3, TigerLLM, Qwen) using parameter-efficient \textbf{LoRA} adapters.}
+            \resumeItem{\textbf{Reasoning Enhancement:} Enhanced model reasoning via \textbf{Chain-of-Thought (CoT)} and a self-refinement loop that iteratively critiques and corrects generated code based on execution feedback.}
+            \resumeItem{\textbf{Error Analysis:} Conducted rigorous error analysis to identify failure modes, achieving \textbf{85\% accuracy} and \textbf{4th Place} out of 32 teams.}
+        \resumeItemListEnd
+
+    % PUBLICATION 2 (The SemEval one)
+    \resumeProjectHeading
+        {\textbf{Deja Vu at SemEval 2024 Task 9} \href{https://aclanthology.org/2024.semeval-1.180.pdf}{\faExternalLink*}}{SemEval 2024, NAACL}
+        \resumeItemListStart
+            \resumeItem{Designed data augmentation pipelines to improve model robustness for common sense reasoning tasks.}
+            \resumeItem{Conducted a comparative study of Advanced Language Models, analyzing performance gaps in lateral thinking puzzles.}
+        \resumeItemListEnd
+
+    % PUBLICATION 3 (The EMNLP one)
+    \resumeProjectHeading
+        {\textbf{Team\_Syrax at BLP-2023 Task 1} \href{https://aclanthology.org/2023.banglalp-1.32.pdf}{\faExternalLink*}}{BLP 2023, EMNLP}
+        \resumeItemListStart
+            \resumeItem{\textbf{Semi-Supervised Learning:} Applied self-training techniques and back-translation to mitigate data scarcity and class imbalance in Bangla text.}
+            \resumeItem{\textbf{Ensemble Strategy:} Implemented bagging and majority voting ensembles for Violence Inciting Text Detection, achieving \textbf{Top 20} rank.}
+        \resumeItemListEnd
+
+    % UNDERGRAD THESIS (Included because it shows depth in VQA)
+    \resumeProjectHeading
+        {\textbf{Visual Question Answering (VQA) Data Synthesis} $|$ \emph{Undergraduate Thesis}}{2022}
+        \resumeItemListStart
+            \resumeItem{Addressed "Answer Space Diversity" limitation in VQA v2 by augmenting training data with automatically generated, contextually relevant QA pairs.}
+            \resumeItem{Conducted a comprehensive study of VQA methods to analyze limitations in visual reasoning.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+ \resumeSubheading
+    {Dynamic Solution Innovators  \href{https://www.dsinnovators.com/}{\faExternalLink*}}{April 2023 -- Present}
+    {Software Engineer}{Dhaka, Bangladesh}
+    \resumeItemListStart
+
+      \resumeItem{Built and open-sourced \textbf{\href{https://github.com/riyadomf/glassfish-hotswap-cli}{\texttt{gf} \faExternalLink*}}, a GlassFish development CLI that \textbf{hot-swaps
+  bytecode} into running JVMs via JDI/JDWP and bypasses JasperReports classloader caching, reducing local edit-deploy cycles from \textbf{$\sim$2 minutes to $\sim$5 seconds}.}
+
+      \resumeItem{Re-architected file storage and delivery behind a pluggable \textbf{\texttt{StorageClient}} abstraction supporting MinIO and filesystem backends, replacing
+  base64-inlined file rendering with URL-based streaming to eliminate large HTML payloads and reduce server-side memory pressure. Added scoped file authorization and \textbf{nginx
+  X-Accel-Redirect} offloading for efficient file serving.}
+
+      \resumeItem{Designed a reusable \textbf{approval-workflow engine} backed by configurable state transitions, replacing hardcoded per-module approval logic. Engineered a
+  \textbf{dynamic field-level correction system} enabling reviewers to reopen only selected form fields with inline feedback while preserving audit history.}
+
+      \resumeItem{Designed a \textbf{JMS}-based notification pipeline with DLQ-backed retries, isolating SMS/email failures from the synchronous request path.}
+
+      \resumeItem{Performed application security reviews and \textbf{static/dynamic testing against OWASP Top 10} risks as part of the internal Cybersecurity Team, catching
+  access-control, injection, and validation flaws before production release.}
+
+    \resumeItemListEnd
+
+
+  \resumeSubheading
+    {Altri.ai  \href{https://altri.ai}{\faExternalLink*}}{Part-time}
+    {Full-Stack AI Engineer, RevestAI \href{https://revestai.com}{\faExternalLink*}}{Remote, US}
+    \resumeItemListStart
+
+      \resumeItem{Rebuilt the LLM enrichment pipeline around \textbf{\texttt{asyncio.gather}} with bounded concurrency and atomic batch commits, allowing failed batches to resume
+  without reprocessing completed LLM calls and improving throughput by \textbf{$\sim$10$\times$} over the prior sequential pipeline.}
+
+      \resumeItem{Designed the \textbf{three-stage property scoring pipeline} separating LLM feature extraction, valuation models, and deterministic financial heuristics, enabling each
+   layer to be independently retrained and tested.}
+
+      \resumeItem{Built the property ingestion pipeline on HomeHarvest and \textbf{PostgreSQL} using content-hash deduplication and incremental delta-syncing, preventing duplicate
+  enrichment runs while preserving historical listing state across repeated scrapes.}
+
+      \resumeItem{Implemented \textbf{distributed job coordination on PostgreSQL} using \texttt{SELECT FOR UPDATE} row-level locks with automatic stale-lock recovery, allowing multiple scheduler replicas to safely process long-running enrichment and training jobs.}
+      \resumeItem{Built the ML training and promotion pipeline for \textbf{XGBoost}-based property valuation using Champion/Challenger validation and curated holdout datasets to
+  prevent unverified models from triggering production-wide rescoring.}
+
+    \resumeItemListEnd
+
+
+
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{KnowledgeRelay} \href{https://github.com/riyadomf/KnowledgeRelay}{\faExternalLink*} $|$ \emph{Python, FastAPI, LangChain, ChromaDB, React}}{2025}
+%           \resumeItemListStart
+%             \resumeItem{Built a RAG system to preserve project-specific knowledge bases and assist team members via contextual Q\&A.}
+%             \resumeItem{Engineered a multi-stage knowledge ingestion pipeline that automatically generates QA pairs from documents.}
+%             \resumeItem{Integrated \textbf{ChromaDB} with vector embeddings and metadata-based filtering for efficient retrieval.}
+%             \resumeItem{Implemented contextual query rephrasing using chat history for higher accuracy.}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{PrimeFaces Open Source Contribution} \href{https://github.com/primefaces/primefaces/pull/12865}{\faExternalLink*} $|$ \emph{Java, JSF, PrimeFaces}}{2024}
+%           \resumeItemListStart
+%             \resumeItem{Contributed a feature enhancement to the \texttt{JPALazyDataModel} of \textbf{PrimeFaces} component library.}
+%             \resumeItem{Enabled developers to perform complex, customizable filtering within DataTables.}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Shopaholic} \href{https://github.com/Nowshadjunaed/Shopaholic}{\faExternalLink*} $|$ \emph{JavaScript, Node.js, Express.js, MongoDB, React, Redux}}{2022}
+%           \resumeItemListStart
+%             \resumeItem{Built a full-stack e-commerce platform connecting customers, banks, and suppliers.}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Brevity} \href{https://github.com/riyadomf/Brevity}{\faExternalLink*} $|$ \emph{Python, Flask, MySQL, JavaScript}}{2021}
+%           \resumeItemListStart
+%             \resumeItem{Developed a knowledge-sharing platform connecting beginners with experts in various fields.}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+% \resumeProjectHeading
+% {\textbf{gf: GlassFish Dev Workflow CLI} \href{https://github.com/riyadomf/glassfish-hotswap-cli}{\faExternalLink*} $|$ \emph{Java, Bash, GlassFish, JDI/JDWP}}{2026}
+% \resumeItemListStart
+%     \resumeItem{Built and open-sourced a GlassFish development CLI that hot-swaps modified bytecode into running JVMs via \textbf{JDI/JDWP}, reducing edit-deploy cycles from \textbf{\~2 minutes to \~5 seconds}.}
+%     \resumeItem{Reverse-engineered Mojarra Facelets cache behavior and implemented JasperReports hot-reloading by bypassing classloader-cached resources in exploded deployments.}
+% \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{KnowledgeRelay} \href{https://github.com/riyadomf/KnowledgeRelay}{\faExternalLink*} $|$ \emph{Python, FastAPI, LangChain, ChromaDB, React}}{2025}
+\resumeItemListStart
+    \resumeItem{Built a RAG-based knowledge transfer system during a 24-hour onsite hackathon, achieving \textbf{6th place} in the DSI AI Agent Hackathon 2025.}
+    \resumeItem{Engineered a multi-stage ingestion pipeline that generates structured QA pairs from documents and supports context-aware conversational retrieval.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{PrimeFaces Open Source Contribution} \href{https://github.com/primefaces/primefaces/pull/12865}{\faExternalLink*} $|$ \emph{Java, JSF, PrimeFaces}}{2024}
+\resumeItemListStart
+    \resumeItem{Contributed a feature enhancement to PrimeFaces' \texttt{JPALazyDataModel}, enabling advanced custom filtering for DataTable-backed JPA queries.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+%-----------HONORS & AWARDS-----------
+\section{Honors, Awards \& Certifications}
+    \resumeSubHeadingListStart
+        \resumeItem{\textbf{4th Place} out of 32 teams -- Code Generation in Bangla Shared Task, IJCNLP-AACL 2025 \href{https://noshinulfat.github.io/blp25_code_generation_task/\#/home:~:text=AdversaryAI,0.850}{[Leaderboard]}}
+        \resumeItem{\textbf{6th Place} out of 30 teams -- DSI AI Agent Hackathon, 2025 \href{https://github.com/riyadomf/knowledgeRelay/blob/main/AI\%20Agent\%20Hackathon\%20Leaderboard\%20Report.pdf}{[Leaderboard]}}
+        \resumeItem{\textbf{Top 20} (Rank 12 post-eval) -- Violence Inciting Text Detection (VITD), BLP 2023 \href{https://github.com/blp-workshop/blp_task1}{[Leaderboard]}}
+        \resumeItem{\textbf{Ranked 11th} -- BUET CSE Fest 2022 AI Contest}
+        \resumeItem{\textbf{Certified in Cybersecurity (CC)} -- ISC2 \href{https://www.credly.com/badges/080d28bf-8f3e-4124-aaa5-ed49855f3f85/public_url}{[Badge]}}
+        \resumeItem{\textbf{Solved 500+} algorithmic problems on Codeforces, LeetCode, and LightOJ.}
+    \resumeSubHeadingListEnd
+
+
+%-----------LEADERSHIP & TEACHING-----------
+\section{Leadership \& Teaching}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Course Instructor}{2024 -- Present}
+      {Dynamic Learning}{Remote}
+      \resumeItemListStart
+        \resumeItem{Authored and instructed \textbf{\href{https://dynamic-learning.innovatorslab.net/course/index.php?page=courses\&courseid=35}{Enterprise Web Development with JEE, JSF, and PrimeFaces}} course, teaching core architectural patterns including component-driven design, CDI/EJB integration, and JSF lifecycle management. \href{https://www.youtube.com/playlist?list=PLvzgcI0UCIWbGgvPQioP789FTLocObG3v}{\textcolor{red}{\faYoutube}}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Volunteer}}{2019}
+        \resumeItemListStart
+            \resumeItem{Served as volunteer at IEEE International Conference on Bangla Speech and Language Processing (ICBSLP).}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+ %-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+
+     \textbf{Languages}{: Java, Python, SQL, Bash, JavaScript, C/C++} \\
+
+     \textbf{Backend \& Systems}{: Jakarta EE (JSF, CDI, EJB, JPA, JMS), Spring Boot, FastAPI, GlassFish, AspectJ} \\
+
+     \textbf{AI \& ML Systems}{: PyTorch, LLMs, RAG, LangChain, ChromaDB, XGBoost, LoRA Fine-tuning, NLP} \\
+
+     \textbf{Databases \& Storage}{: PostgreSQL, MySQL, Neo4j, Supabase, MinIO, Hibernate/JPA, Flyway, Alembic} \\
+
+     \textbf{Security}{: OWASP Top 10, RBAC, Jakarta Security, JWT} \\
+
+     \textbf{Infrastructure \& Observability}{: Docker, Git, GitHub Actions, Prometheus, Grafana, Loki, Nginx, Ansible, ZFS} \\
+     
+    \textbf{Frontend}{: React, PrimeFaces}
+
+
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
