@@ -117,7 +117,7 @@ Canonical framings (each fact appears once per document; as of 2026-07-29 ranks 
 
 ### Evidence checklist per application
 
-- Research CV (2 pages) compiled fresh from `resume/Omar_research_cv/main.tex`
+- Research CV compiled fresh from `resume/Omar_research_cv/main.tex` (2 pages preferred; see §8 on length)
 - Verified citations (§3), Scholar link without `&authuser=2`
 - Links that must resolve: SREGym PR #886, PrimeFaces PR #12865, gf repo, leaderboards
 - GRE 317/340, TOEFL 104/120: submit through application forms; on the CV they stay as one compact line below CGPA (locked decision)
@@ -142,4 +142,5 @@ Canonical framings (each fact appears once per document; as of 2026-07-29 ranks 
 - **Publications** are a concise numbered list: authors (mine bolded), linked title, short venue with honest co-location, year. No pages, no city, no "Association for Computational Linguistics", no method line, no ranks. The full citations in §3 remain the source of truth for application forms and BibTeX.
 - **Projects** on the research CV: SREGym fault scenario, LLM query router, KnowledgeRelay, PrimeFaces.
 - **Industry experience is evidence of systems skill, not the headline.** Keep EC-BVRS (scale), gf, observability, and a compressed security clause; drop enterprise-CRUD detail (approval workflows, file storage) from this variant. Altri keeps the async 10x rewrite, Postgres job coordination, and the ingestion pipeline; Champion/Challenger was swapped out for the ingestion pipeline on 2026-07-29 as the stronger data-systems bullet, then folded back on as a holdout-gated-promotion clause so the evaluation discipline stays visible to a research reader. **Always state the promotion gate as human-in-the-loop**: a challenger beats the champion on a gold-standard holdout slice and a human signs off. Never phrase it as automatic; the manual gate is a deliberate design choice (valuation is monetary, aggregate metrics hide slice regressions), not missing automation.
-- 2 pages, hard ceiling. When something must go to hold two pages, the order to cut is: OWASP as a standalone bullet (fold it into the observability bullet), then extra bullets on the older shared tasks, then the thesis second bullet.
+- **Length: 2 pages is the preference, not a hard ceiling.** Never delete content to make it fit. If an edit pushes the CV to 3 pages, compile it, see what actually overflows, and **report that to Omar with the candidate cuts before removing anything**. He decides whether to cut, to accept a third page, or to tighten wording instead. Rewording for concision without losing a fact is fine to do unprompted; dropping a bullet, an entry, or a claim is not.
+- If cuts are agreed, the usual order to consider is: extra bullets on the older shared tasks, then the thesis second bullet, then the ICBSLP volunteer line. Treat that as a starting proposal, not a mandate.

@@ -171,7 +171,7 @@
 
 **Category-level talking points**: missing authorization on data endpoints (IDOR), insufficient input validation, file-upload trust issues. Process: code review, DAST against staging, threat-model walkthrough with the project team. Outcome: every project gets a clean security report before production sign-off.
 
-**Placement**: off the dev CV since 2026-07; stays on the research CV and the site. The ISC2 CC certification carries the security signal on the dev CV.
+**Placement**: off **all** outputs since 2026-07-30 (both CVs, the about page, the job-experience page, and the skills page). Omar's call: he is not deep enough in application security to want it claimed as a skill, and a bolded "OWASP Top 10" invites an interview line of questioning he would rather not invite. The **ISC2 CC certification stays** in Honors on both CVs and on the certifications page, because a credential is a fact about what he holds, not a claim about depth. The work described here still happened; keep it as interview background only, and do not reintroduce it as a bullet or skill tag.
 
 ### 2.8 Course Instructor (Dynamic Learning)
 
@@ -330,7 +330,7 @@ Rule: every skills-line entry is a claim volunteered for interrogation. Anything
 |  | Hibernate / JPA | 2026 | DSI |
 |  | Flyway, Alembic | 2026 | DSI / Altri respectively |
 |  | Neo4j | 2024 | Coursework only. REMOVED from CVs and skills page (2026-07); do not re-add without real use |
-| **Security** | OWASP Top 10, SAST/DAST | 2026 | DSI Cybersecurity Team |
+| **Security** | OWASP Top 10, SAST/DAST | 2026 | DSI Cybersecurity Team (real experience, but **not claimed on CVs or the site** since 2026-07-30; see §2.7) |
 |  | Jakarta Security | 2026 | E-Appeal and others |
 |  | JWT, RBAC | 2026 | DSI, Altri |
 |  | ISC2 CC certified | 2024 | Credential |
@@ -591,9 +591,6 @@ Post-2026-07 rewrite. These follow the writing rules in README.md (one bold max,
 
 **Cross-cutting**
 - **Cross-project:** Isolated auditing and notification dispatch from business logic with AspectJ cross-cutting interceptors, a pattern reused in multiple Jakarta EE systems.
-
-**Security (research CV and site only; off the dev CV by decision)**
-- On the internal Cybersecurity Team, ran static and dynamic security testing against OWASP Top 10 risks and found access-control, injection, and validation flaws before production releases.
 
 **Altri**
 - Rewrote the sequential LLM enrichment pipeline as bounded-concurrency async batches with atomic per-batch commits. Throughput rose about **10x**, and failed runs resume without repeating completed LLM calls.
