@@ -56,13 +56,17 @@
 ### 2.1 EC-BVRS (Election Commission, Bangladesh Voter Registration System)
 
 > **Status**: current project, joined July 2026
-> **Scale**: national voter registration (NID) platform serving records of 150+ million people
+> **Scale**: national voter registration (NID) platform; the voter registration flow processes records for nearly 150 million voters
 > **Tech**: Spring Boot, Kafka, Redis
 > **Detail level**: keep descriptions at the level already published on the portfolio (project name, scale, stack)
 
-**Where it stands**: just joined; current work is system understanding and tech ramp-up. CV/portfolio bullets stay modest ("recently joined... deep-diving the system architecture and stack") until real contributions land. This project is what backs Spring Boot, Kafka, and Redis in the skills lists.
+**Where it stands**: contributing to the data pipeline behind the voter registration flow. This project is what backs Spring Boot, Kafka, and Redis in the skills lists.
 
-**To fill in as contributions land**: subsystem owned, throughput/scale numbers, specific Kafka/Redis usage patterns, any migration or reliability work.
+**Canonical CV bullet** (both variants, 2026-07-29): "Contributed to the data pipeline behind the voter registration flow of Bangladesh's national voter registration (NID) platform, which processes records for nearly **150 million voters** (Spring Boot, Kafka, Redis)."
+
+**Framing rule**: no "recently joined" or "currently ramping up" wording anywhere. It goes stale on its own and reads weaker than the contribution itself. State what was built.
+
+**To fill in as contributions grow**: which pipeline stages were owned, throughput numbers, specific Kafka topic/consumer patterns, Redis caching strategy, any migration or reliability work.
 
 ### 2.2 `gf`, GlassFish hot-swap CLI
 
@@ -247,7 +251,13 @@ Malformed LLM JSON (missing brace, markdown fences, token-limit truncation) cras
 ## 4. Side projects and open source
 
 ### 4.1 KnowledgeRelay (2025)
-RAG-based knowledge transfer agent built in a 24-hour onsite hackathon; 6th of 30 teams, DSI AI Agent Hackathon 2025. Multi-stage ingestion auto-generates QA pairs from documents (beyond naive vector search); contextual retrieval chain rephrases follow-up questions using chat history; hybrid OpenAI/Ollama support. Tech: Python, FastAPI, LangChain, ChromaDB, OpenAI, Ollama, React. Repo: github.com/riyadomf/knowledgeRelay
+Knowledge-transfer agent built in a 24-hour onsite hackathon; 6th of 30 teams, DSI AI Agent Hackathon 2025. Repo: github.com/riyadomf/knowledgeRelay
+
+**What it actually does** (corrected 2026-07-29 against the repo README; earlier CV copy described only the document half and missed the point of the project): the problem is that critical unwritten knowledge leaves with departing team members. Two ingestion flows: **Project QA** interactively prompts outgoing members with adaptive, context-aware questions generated from chat history, and **Document QA** extracts knowledge from uploaded files (PDFs, Word docs, code) with chunking strategies that differ for code versus prose. Retrieval is RAG over ChromaDB with metadata filtering; follow-up questions are rewritten into self-contained queries using prior conversation context; answers carry source attribution back to the originating file. Hybrid OpenAI/Ollama support.
+
+Tech: Python, FastAPI, LangChain, ChromaDB, OpenAI, Ollama, React.
+
+**Canonical CV bullet**: "Built a knowledge-transfer agent that interviews outgoing team members with adaptive questions, ingests their documents and code, and answers new joiners' questions with source attribution. Retrieval rewrites follow-ups into self-contained queries; chunking differs for code and prose."
 
 ### 4.2 PrimeFaces PR #12865 (2024, merged)
 Added the ability to inject custom `FilterMeta` into `JPALazyDataModel`, enabling advanced filtering beyond the stock component. PrimeFaces has 12k+ GitHub stars and is used by thousands of enterprise apps. A merged PR in a major library is worth more than self-graded bullets; keep it prominent.
@@ -255,10 +265,34 @@ Added the ability to inject custom `FilterMeta` into `JPALazyDataModel`, enablin
 ### 4.3 SREGym fault-scenario PR #886 (2026, merged)
 Dev-relevant angle: Kubernetes failure-mode depth (admission webhooks, NetworkPolicy, RBAC, kind). Full details live in [research-knowledge.md](research-knowledge.md) §2; on the dev CV it lives under Projects with the research entry kept bird's-eye.
 
-### 4.4 Shopaholic (2022)
+### 4.4 Token-Efficient LLM Query Router (2026)
+
+> **Context**: AMD Hackathon Act II, Track 1. Repo: github.com/riyadomf/llm-query-router
+> **Goal**: answer 8 task categories (factual QA, math, sentiment, summarization, NER, code debugging, logic, code generation) while minimizing paid API token spend under a hard accuracy gate.
+
+**Architecture, a precision-gated cascade** (each tier only answers what it can prove it handles; everything uncertain escalates):
+1. **Regex router**, zero tokens, classifies the task category and falls through to a safe default when uncertain. Measured 64/64 on dev, practice, and adversarial paraphrase sets.
+2. **ONNX sentiment specialist** (DistilBERT-SST2), non-generative, zero tokens. Shipped only after measuring 100% precision at 38% coverage; uncertain cases escalate to cloud.
+3. **Fine-tuned Qwen2.5-1.5B** (LoRA via Unsloth on a free Colab T4, ~2,800 programmatically validated synthetic examples) handles factual QA and NER locally. A wall-clock speed calibration detects the grading VM's real throughput at runtime and enables a category only when it can finish safely.
+4. **Cloud model** (Fireworks API) as accuracy backstop, with minimized system prompts, thinking mode disabled (199 to 55 tokens on the first call), and per-category token caps.
+
+**The two ideas worth telling in an interview**:
+- **Program-aided math**: instead of having the model compute, it emits a short symbolic expression evaluated by a sandboxed AST interpreter. Removes arithmetic error as a category and cuts output tokens ~90%.
+- **Deterministic verification guards instead of model self-assessment**: self-reported confidence was tested and found unreliable at this scale, so local answers pass programmatic checks (for example, an entity-completeness check requiring every named entity in the source to appear in the output: 99% detection of dropped entities at 62% acceptance over 597 ground-truth rows).
+
+**Engineering process** (the part that reads as senior):
+- LLM-as-judge evaluation harness mirroring the official rubric, so every change was tested offline before a submission was spent.
+- Offline precision experiments killed unpromising ideas on measured evidence (a batching optimization, a naive NER specialist, a "neutral" sentiment heuristic) before they cost a submission.
+- 17 measured build iterations logged version by version in SCORES.md with root-cause analysis, including a production timeout bug, an accuracy-gate failure, and a token regression from an over-broad regex.
+- Immutable Docker image tags per submission for reproducibility, adopted after an early mutable-tag mistake made it unclear which code had actually been graded.
+- Capability promotion loop: LLM-generated synthetic data, programmatic validation (execution-checked math, fact-coverage-checked summaries), fine-tune, A/B evaluate, promote only on a measured win.
+
+**No final leaderboard rank is published**; do not claim one.
+
+### 4.5 Shopaholic (2022)
 Full-stack e-commerce platform. Node.js, Express, MongoDB, React, Redux. REST API, schemas, frontend.
 
-### 4.5 Brevity (2021)
+### 4.6 Brevity (2021)
 Knowledge-sharing blog platform. Python, Flask, MySQL, vanilla JS. Auth, CRUD, comments, profiles.
 
 ---
@@ -316,7 +350,8 @@ Rule: every skills-line entry is a claim volunteered for interrogation. Anything
 
 - **~2 min to ~5 s** edit-deploy cycle (`gf` CLI); "~96% reduction" as the secondary framing
 - **~10x** throughput on LLM enrichment (Altri asyncio refactor)
-- **150+ million** people's records served by EC-BVRS (current project scale; not a personal-contribution claim yet)
+- **~150 million** voters' records processed by the EC-BVRS voter registration flow (contributed to its data pipeline)
+- **64/64** regex-router accuracy and **100% measured precision** on the gated ONNX sentiment tier; **~90%** output-token cut from program-aided math; **17** measured releases (LLM query router)
 - **4 of 12** BCIC-ERP modules owned end-to-end (Procurement, Inventory, Asset, Budget)
 - **PrimeFaces PR #12865** merged (12k+ star library)
 - **SREGym PR #886** merged (UIUC AI-for-SRE benchmark)
@@ -405,9 +440,17 @@ Tags: critical-problem, proactive, deep-debugging, multiplier, tooling
 **Action**: authored and teach *Enterprise Web Development with JEE, JSF, and PrimeFaces* (component-driven design, CDI/EJB, JSF lifecycle, RBAC patterns), with a YouTube presence.
 **Result**: active since 2024; demonstrates teaching and communication.
 
-### 7.8 EC-BVRS ramp-up (placeholder)
+### 7.8 EC-BVRS (in progress)
 
-Too early for a STAR story. Capture as it develops: how you built a mental model of a 150M-record national system, first contribution, first incident or review. This will become the "ramping up on a large unfamiliar system" story.
+First contribution landed: the data pipeline behind the voter registration flow. Still too thin for a full STAR story. Capture as it develops: how you built a mental model of a system holding ~150 million voter records, what the pipeline actually does, the first incident or review you handled. This becomes the "ramping up on a large unfamiliar system" story.
+
+### 7.9 Evidence over intuition: LLM query router (verbatim-ready)
+
+**Situation**: a hackathon agent had to answer 8 task categories while minimizing paid API tokens under a hard accuracy gate, with a limited number of graded submissions.
+**Task**: cut token cost without dropping below the accuracy floor, where a single bad submission is expensive.
+**Action**: built a precision-gated cascade (regex router, ONNX classifier, fine-tuned local model, cloud backstop) where each tier only answers what it can prove it handles. Replaced model self-assessment with deterministic guards after measuring that self-reported confidence was unreliable. Built an LLM-as-judge harness mirroring the official rubric so every idea was tested offline first, which killed three plausible-sounding optimizations on measured evidence before they cost a submission.
+**Result**: 17 measured releases with root-cause analysis for each regression (a production timeout, an accuracy-gate failure, a token regression from an over-broad regex); immutable Docker tags made every graded build reproducible.
+**Why it lands**: it is a story about not trusting your own intuition, or the model's, without measurement.
 
 ---
 
@@ -528,8 +571,8 @@ Per-company prep, negotiation notes, and answers still being drafted live in the
 
 Post-2026-07 rewrite. These follow the writing rules in README.md (one bold max, varied shape, no filler). Pick per JD; the dev CV groups DSI bullets by project prefix.
 
-**EC-BVRS (current, keep modest until contributions land)**
-- **EC-BVRS:** Recently joined the team behind Bangladesh's national voter registration (NID) platform, which serves records of 150+ million people. Currently deep-diving the system architecture and its Spring Boot, Kafka, and Redis stack.
+**EC-BVRS (current; expand as contributions grow, but never with "recently joined" wording)**
+- **EC-BVRS:** Contributed to the data pipeline behind the voter registration flow of Bangladesh's national voter registration (NID) platform, which processes records for nearly **150 million voters** (Spring Boot, Kafka, Redis).
 
 **Tooling / gf**
 - **Tooling:** Built and open-sourced `gf`, a GlassFish CLI that hot-swaps modified bytecode into running JVMs over JDI/JDWP and bypasses JasperReports classloader caching. Cut local edit-deploy cycles from **~2 minutes to ~5 seconds**.
@@ -557,10 +600,22 @@ Post-2026-07 rewrite. These follow the writing rules in README.md (one bold max,
 - Designed the three-stage property scoring pipeline that separates LLM feature extraction, ML valuation, and deterministic financial heuristics, so each layer can be retrained and tested on its own.
 - Built the property ingestion pipeline on HomeHarvest and PostgreSQL with content-hash deduplication and incremental delta-syncing. Repeated scrapes no longer trigger duplicate enrichment runs, and historical listing state is preserved.
 - Implemented distributed job coordination on PostgreSQL with `SELECT FOR UPDATE` row locks and stale-lock recovery, so multiple scheduler replicas safely share long-running enrichment and training jobs.
-- Built the training and promotion pipeline for XGBoost property valuation: a challenger model must beat the current champion on a curated holdout set before it can trigger production-wide rescoring.
+- Built the training and promotion pipeline for XGBoost property valuation. A challenger must beat the champion on a gold-standard holdout slice, and a human signs off before production-wide rescoring, since aggregate metrics can hide slice regressions and valuation errors cost money.
+- (Research-CV variant, folded onto the ingestion bullet) Built the property ingestion pipeline on PostgreSQL with content-hash deduplication and incremental delta-syncing, so repeated scrapes skip already-enriched listings while preserving historical state. Model promotion is gated the same way: a challenger must beat the champion on a gold-standard holdout slice, and a human signs off before production-wide rescoring.
+
+**Projects**
+**Token-Efficient LLM Query Router** (AMD Hackathon Act II, Track 1). Canonical three-bullet form, identical on both CVs as of 2026-07-30; the earlier two-bullet version was too dense to read at a glance:
+- Designed a four-tier inference cascade (regex router → ONNX classifier → LoRA fine-tuned Qwen2.5-1.5B → cloud LLM fallback) that resolves 8 task categories with minimal paid API usage, admitting each tier only at measured precision (router 64/64 on adversarial cases; sentiment classifier 100%).
+- Replaced model confidence checks with deterministic verification guards: sandboxed AST evaluation of model-emitted math expressions, which removes arithmetic errors and cuts output tokens ~90%, and an entity-completeness check that catches 99% of dropped entities in NER.
+- Fine-tuned the local tier on 2,800 programmatically validated synthetic examples and iterated 17 times against an LLM-as-judge harness mirroring the competition rubric, root-causing each regression before redeploy.
+
+Attribution rule for this project: the **~90% token cut belongs to program-aided math specifically**, not to the guards collectively; the **self-assessment contrast appears once**, in the guards bullet. Details that came off the CVs but stay interview-ready in §4.4: runtime speed calibration, immutable Docker tags per submission, the three named regressions, and the offline experiments that killed ideas before they cost a submission.
+- **KnowledgeRelay**: Built a knowledge-transfer agent that interviews outgoing team members with adaptive questions, ingests their documents and code, and answers new joiners' questions with source attribution. Retrieval rewrites follow-ups into self-contained queries; chunking differs for code and prose.
 
 **Retired bullets (do not resurrect)**
 - "Built the foundational architecture for DSI's first large-scale Jakarta EE system..." (retired 2026-07; use the concrete E-Appeal version above)
+- "Recently joined... currently deep-diving the system architecture" for EC-BVRS (retired 2026-07-29; goes stale, and understates the contribution)
+- "Built a RAG-based knowledge transfer system: multi-stage ingestion generates structured QA pairs from documents..." for KnowledgeRelay (retired 2026-07-29; described only the document flow and missed the outgoing-member interview, which is the point of the project)
 - Bold-heavy variants of any bullet above (pre-review style: 16 bolded terms per section, uniform "-ing" tails)
 
 ---

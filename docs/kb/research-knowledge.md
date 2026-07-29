@@ -89,12 +89,13 @@ Verified against the ACL Anthology on 2026-07-18. Use these exact citations; bol
 
 ## 5. Competitions and rankings
 
-Canonical framings (each fact appears once per document; ranks live with Publications on the research CV, in Honors on the dev CV):
+Canonical framings (each fact appears once per document; as of 2026-07-29 ranks live in the Honors section on **both** CVs, since the research CV's Publications list is now a concise citation list and its Research Experience entries carry methods, not ranks):
 
 - **4th of 32 teams**, Code Generation in Bangla Shared Task, IJCNLP-AACL 2025, Pass@1 0.85. Leaderboard: noshinulfat.github.io/blp25_code_generation_task/ (plain URL; no `#:~:text=` fragments, they are fragile)
 - **6th of 30 teams**, DSI AI Agent Hackathon 2025 (KnowledgeRelay, 24-hour onsite)
 - **Ranked 12th in post-evaluation (19th official)**, Violence Inciting Text Detection, BLP 2023. Never "Top 20"
 - **11th place**, BUET CSE Fest 2022 AI Contest
+- **AMD Hackathon Act II, Track 1** (2026): token-efficient LLM query router. No final leaderboard rank is published, so claim none; the entry earns its place on method (precision-gated cascade, LoRA fine-tuning, LLM-as-judge evaluation harness), not placement. Full deep-dive in [dev-knowledge.md](dev-knowledge.md) §4.4.
 
 ---
 
@@ -135,8 +136,10 @@ Canonical framings (each fact appears once per document; ranks live with Publica
 
 ## 8. Research-CV conventions
 
-- **Order**: header (with one-line research interests), Education, Research Experience, Publications, Experience (trimmed to 3 systems-relevant bullets per job), Projects, Honors, Teaching & Service, Skills.
-- **Research Experience** holds SREGym (v2 paper first, then merged PR, then oracle design) and the thesis. Bird's-eye framing; PR specifics under Projects on the dev CV.
-- **Publications** are numbered full citations with my name bolded and ranks attached; one single-sentence method line per entry.
-- **Industry experience is evidence of systems skill, not the headline.** Keep gf, observability, and security; drop enterprise-CRUD detail (approval workflows, file storage) from this variant.
-- 2 pages, hard ceiling.
+- **Order**: header (with one-line research interests), Education, Research Experience, Publications, Experience (trimmed to 3 or 4 systems-relevant bullets per job), Projects, Honors, Teaching & Service, Skills.
+- **Research Experience** (revised 2026-07-29) holds four entries: SREGym, then one entry per shared task where the contribution was substantial (Code Generation for Bangla, BLP-2025, first author; Violence Inciting Text Detection, BLP-2023, first author), then the undergraduate thesis. Each carries method-level bullets, because a citation list alone hides what was actually done. **Deja Vu / SemEval 2024 stays in Publications only**: the contribution there was small, and padding it would be the kind of inflation the professor review flags.
+- **SREGym entry stays bird's-eye** (v2 paper, case studies, scenario and oracle design). The concrete PR #886 specifics live under Projects on both CVs. No sentence appears in both places.
+- **Publications** are a concise numbered list: authors (mine bolded), linked title, short venue with honest co-location, year. No pages, no city, no "Association for Computational Linguistics", no method line, no ranks. The full citations in §3 remain the source of truth for application forms and BibTeX.
+- **Projects** on the research CV: SREGym fault scenario, LLM query router, KnowledgeRelay, PrimeFaces.
+- **Industry experience is evidence of systems skill, not the headline.** Keep EC-BVRS (scale), gf, observability, and a compressed security clause; drop enterprise-CRUD detail (approval workflows, file storage) from this variant. Altri keeps the async 10x rewrite, Postgres job coordination, and the ingestion pipeline; Champion/Challenger was swapped out for the ingestion pipeline on 2026-07-29 as the stronger data-systems bullet, then folded back on as a holdout-gated-promotion clause so the evaluation discipline stays visible to a research reader. **Always state the promotion gate as human-in-the-loop**: a challenger beats the champion on a gold-standard holdout slice and a human signs off. Never phrase it as automatic; the manual gate is a deliberate design choice (valuation is monetary, aggregate metrics hide slice regressions), not missing automation.
+- 2 pages, hard ceiling. When something must go to hold two pages, the order to cut is: OWASP as a standalone bullet (fold it into the observability bullet), then extra bullets on the older shared tasks, then the thesis second bullet.
