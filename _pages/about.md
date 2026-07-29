@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I build backend systems, enterprise applications, and production AI infrastructure with a focus on correctness, operational reliability, and maintainable architecture. My work spans government-scale Jakarta EE systems, distributed ML pipelines, and low-resource NLP research, with publications at EMNLP and NAACL.
+I build backend systems, enterprise applications, and production AI infrastructure. I care about correctness, operational reliability, and architecture that stays maintainable. My work spans government-scale Jakarta EE systems, distributed ML pipelines, and low-resource NLP research, including three workshop papers co-located with EMNLP, NAACL, and IJCNLP-AACL.
 
 <div class="stats-grid">
   <div class="stat-card">
@@ -26,13 +26,13 @@ I build backend systems, enterprise applications, and production AI infrastructu
 
 ## What I Do
 
-**At [Dynamic Solution Innovators](https://dsinnovators.com/)** — I build large-scale enterprise systems for government clients (NBR, MoCAT, BCIC) using Jakarta EE, with a focus on backend architecture, workflow systems, and operational tooling. I designed the foundational architecture for DSI’s first enterprise-scale JSF application, contributed to [PrimeFaces open-source](https://github.com/primefaces/primefaces/pull/12865), and open-sourced [`gf`](https://github.com/riyadomf/glassfish-hotswap-cli), a GlassFish workflow CLI that reduced redeploy latency from ~2 minutes to ~5 seconds.
+**At [Dynamic Solution Innovators](https://dsinnovators.com/)**, I build large-scale enterprise systems for government clients (NBR, MoCAT, BCIC, EC) using Spring Boot and Jakarta EE, working on backend architecture, workflow systems, and operational tooling. I defined the security model and CDI/EJB conventions for DSI's first large-scale Jakarta EE system, contributed to [PrimeFaces open-source](https://github.com/primefaces/primefaces/pull/12865), and open-sourced [`gf`](https://github.com/riyadomf/glassfish-hotswap-cli), a GlassFish workflow CLI that cut redeploy latency from ~2 minutes to ~5 seconds. On EC-BVRS, Bangladesh's national voter registration platform, I work on the data pipeline behind a registration flow that processes records for nearly 150 million voters.
 
-**At [Altri.ai](https://altri.ai)** — I build AI-assisted real estate analysis systems combining LLM enrichment, traditional ML valuation models, and large-scale property ingestion pipelines. My work focuses on asynchronous processing, distributed job coordination, and production ML workflows, including a bounded-concurrency enrichment pipeline that improved throughput by ~10×.
+**At [Altri.ai](https://altri.ai)**, I build AI-assisted real estate analysis systems that combine LLM enrichment, traditional ML valuation models, and large-scale property ingestion pipelines. My work centers on asynchronous processing, distributed job coordination, and production ML workflows, including a bounded-concurrency enrichment pipeline that raised throughput by ~10×.
 
-**In Research** — I focus on low-resource NLP, most recently placing **4th out of 32 teams** in the Code Generation in Bangla shared task (BLP 2025) using LoRA fine-tuning and Chain-of-Thought reasoning.
+**In research**, I work on AI agents for site reliability engineering and on NLP for low-resource languages. Right now that means contributing to SREGym, an open-source benchmark from UIUC for evaluating AI agents on real-world system failures, where I am working toward the SREGym v2 paper.
 
-**As an Instructor** — I teach [Enterprise Web Development with JEE and JSF](https://dynamic-learning.innovatorslab.net/course/view.php?id=35) at Dynamic Learning, turning production engineering patterns into practical coursework.
+**As an instructor**, I teach [Enterprise Web Development with JEE, JSF, and PrimeFaces](https://dynamic-learning.innovatorslab.net/course/view.php?id=35) at Dynamic Learning, turning production engineering patterns into practical coursework.
 
 
 ---
@@ -42,18 +42,18 @@ I build backend systems, enterprise applications, and production AI infrastructu
 **B.Sc. in Computer Science & Engineering**, Shahjalal University of Science and Technology (SUST)  
 *CGPA: 3.53/4.00 (Last two years: 3.83)*
 
-**Standardized Tests:**  
-GRE: 317/340 (Q: 160, V: 157, AW: 3.0) | TOEFL: 104/120 (R: 29, L: 27, S: 23, W: 25)
+GRE: 317/340 | TOEFL: 104/120
 
 ---
 
 🔬 Research & Engineering Interests
 ======
 
-* **Backend & Distributed Systems** — Enterprise application architecture, workflow engines, observability, and operational tooling
-* **Low-Resource NLP** — Code generation and text classification for Bangla and other low-resource languages
-* **AI Infrastructure & Retrieval Systems** — LLM enrichment pipelines, RAG systems, and production ML workflows
-* **AI & Security** — Adversarial ML, model robustness, and AI-assisted cybersecurity
+* **AI for SRE & Software Engineering**: benchmarks and evaluation for AI agents that operate real systems, fault injection, and agent behavior analysis
+* **Low-Resource NLP**: code generation and text classification for Bangla and other low-resource languages
+* **AI Infrastructure & Retrieval Systems**: LLM enrichment pipelines, RAG systems, and production ML workflows
+* **Backend & Distributed Systems**: enterprise application architecture, workflow engines, observability, and operational tooling
+* **Security Engineering**: application security reviews against OWASP Top 10 and AI-assisted security tooling
 
 ---
 
@@ -65,7 +65,7 @@ I play football in my free time to stay active and competitive.
 
 ### 📸 Photography
 
-I'm passionate about nature photography — capturing landscapes and everyday moments.
+I'm passionate about nature photography: landscapes and everyday moments.
 
 <button class="photo-toggle-btn" onclick="togglePhotos()" id="photo-toggle-btn">
   <span class="photo-toggle-icon">📷</span> View My Photos

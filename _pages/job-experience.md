@@ -5,7 +5,7 @@ permalink: /job-experience/
 author_profile: true
 ---
 
-I build backend systems, AI infrastructure, and enterprise applications with a focus on correctness, operational reliability, and maintainable architecture. My work spans government-scale Jakarta EE systems, distributed data pipelines, and production ML workflows.
+I build backend systems, AI infrastructure, and enterprise applications. My work spans government-scale Enterprise systems, distributed data pipelines, and production ML workflows.
 
 
 ---
@@ -30,10 +30,19 @@ Core member of the engineering team building large-scale enterprise systems for 
 
 <div class="experience-card" markdown="1">
 
+#### **EC-BVRS: Bangladesh Voter Registration System**
+*Bangladesh's national voter registration (NID) platform, built on Spring Boot, Kafka, and Redis.*
+
+*   Contributed to the **data pipeline** behind the voter registration flow, which processes records for nearly **150 million voters**.
+
+</div>
+
+<div class="experience-card" markdown="1">
+
 #### **E-Appeal: Digital Appeals System for NBR & USAID**
 *A digital platform for managing tax-related appeals.*
 
-*   Built the **foundational architecture** for DSI's first large-scale Jakarta EE system, defining the security model, package structure, and CDI/EJB conventions later reused across subsequent JEE projects at the firm.
+*   Defined the security model, package structure, and CDI/EJB conventions for DSI's first large-scale Jakarta EE system; later JEE projects at the firm adopted these conventions.
 *   Centralized **RBAC enforcement** by replacing authorization checks scattered across JSF views and services with a unified permission-evaluation layer.
 
 </div>
@@ -75,11 +84,10 @@ Building AI-assisted real estate analysis systems that combine LLM-based enrichm
 
 ### Core Contributions
 
-*   Designed the **three-stage property scoring pipeline** separating LLM feature extraction, valuation models, and deterministic financial heuristics, enabling each layer to be independently retrained and tested.
-*   Rebuilt the LLM enrichment pipeline around **`asyncio.gather`** with bounded concurrency and atomic batch commits, allowing failed batches to resume without reprocessing completed LLM calls and improving throughput by **~10×** over the prior sequential pipeline.
-*   Built the property ingestion pipeline on **HomeHarvest** and **PostgreSQL** using content-hash deduplication and incremental delta-syncing, preventing duplicate enrichment runs while preserving historical listing state across repeated scrapes.
-*   Implemented **distributed job coordination on PostgreSQL** using **`SELECT FOR UPDATE`** row-level locks with automatic stale-lock recovery, allowing multiple scheduler replicas to safely process long-running enrichment and training jobs.
-*   Built the ML training pipeline with **Champion/Challenger validation** on a curated holdout datasets and a manual promotion gate, preventing unverified models from triggering production-wide rescoring.
+*   Designed the **three-stage property scoring pipeline** that separates LLM feature extraction, valuation models, and deterministic financial heuristics, so each layer can be retrained and tested on its own.
+*   Built the property ingestion pipeline on **HomeHarvest** and **PostgreSQL** with content-hash deduplication and incremental delta-syncing. Repeated scrapes no longer trigger duplicate enrichment runs, and historical listing state is preserved.
+*   Implemented **distributed job coordination on PostgreSQL** using **`SELECT FOR UPDATE`** row-level locks with automatic stale-lock recovery, so multiple scheduler replicas safely process long-running enrichment and training jobs.
+*   Built the ML training and promotion pipeline with **Champion/Challenger validation**. A challenger must beat the champion on a gold-standard holdout slice, and a human signs off before production-wide rescoring, since aggregate metrics can hide slice regressions and valuation errors cost money.
 
 <!-- 
 ###

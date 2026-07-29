@@ -5,7 +5,7 @@ permalink: /research-experience/
 author_profile: true
 ---
 
-My research focuses on Natural Language Processing for low-resource languages, multimodal AI, and reasoning systems. I have published at **EMNLP** and **NAACL** workshops, with a record of competitive performance in shared tasks.
+I work on AI agents for site reliability engineering and software engineering, and on NLP for low-resource languages. I have three shared-task papers at workshops co-located with EMNLP 2023, NAACL 2024, and IJCNLP-AACL 2025, and I currently contribute to SREGym, an open-source benchmark for AI-driven site reliability engineering.
 
 ---
 
@@ -14,11 +14,12 @@ My research focuses on Natural Language Processing for low-resource languages, m
 ### **Agentic Site Reliability Engineering: AI for SRE**
 <small>2026 | Research Intern, advised by Prof. Tianyin Xu (UIUC)</small>
 
-<span class="achievement-badge">🔬 Contributing to SREGym — Benchmark for AI SRE Agents</span>
+<span class="achievement-badge">🔬 Contributing to SREGym, a Benchmark for AI SRE Agents</span>
 
-*   Contributing to **SREGym**, an open-source benchmark for evaluating AI agents on realistic cloud-native system failures, through case studies and postmortem analysis of real-world outages projected into reproducible benchmark problems.
-*   Studied agent failure modes documented in the **SREGym** and **Stratus** papers (cross-layer reasoning gaps, greedy diagnosis anchoring, reward hacking).
-*   Designing fault scenarios and evaluation oracles that target these weaknesses and quantify where state-of-the-art SRE agents fail to reason across system layers, from control-plane admission to network policy.
+*   Working on the **SREGym v2 paper**: extending SREGym, an open-source benchmark for evaluating AI agents on cloud-native system failures, from synthetic faults to real-world failure scenarios, and analyzing how agents behave on them.
+*   Conducting case studies and postmortem analysis of real-world outages, projecting them into reproducible benchmark problems.
+*   Designing fault scenarios and evaluation oracles that expose documented agent weaknesses: cross-layer reasoning gaps, greedy diagnosis anchoring, and reward hacking.
+*   Contributed a merged fault scenario reproducing a real Kubernetes admission-control incident, with a reward-hack-resistant evaluation oracle (details on the [Projects](/projects/) page).
 
 </div>
 
@@ -27,11 +28,11 @@ My research focuses on Natural Language Processing for low-resource languages, m
 ### **Code Generation in Bangla: Low-Resource Language Adaptation**
 <small>2025 | Shared Task at the BLP Workshop, co-located with IJCNLP-AACL</small>
 
-<span class="achievement-badge">🏆 4th Place out of 32 Teams — 85% Accuracy</span>
+<span class="achievement-badge">🏆 4th Place out of 32 Teams (Pass@1 0.85)</span>
 
-*   Investigated code generation in Bangla by fine-tuning open-source models (Llama 3, TigerLLM, Qwen) using parameter-efficient **LoRA** adapters to overcome data scarcity.
-*   Enhanced reasoning via **Chain-of-Thought (CoT)** prompting and a self-refinement loop that iteratively critiques and corrects generated code based on execution feedback.
-*   Conducted rigorous error analysis to identify failure modes in code generation tasks.
+*   Investigated code generation in Bangla by fine-tuning open-source models (Llama 3, TigerLLM, Qwen) with parameter-efficient LoRA adapters to overcome data scarcity.
+*   Improved generation quality with Chain-of-Thought prompting and a self-refinement loop that critiques and corrects generated code based on execution feedback.
+*   Categorized failing generations by error type (syntax, runtime, misread problem statements) to guide the refinement loop.
 *   **Publication:** <a href="https://aclanthology.org/2025.banglalp-1.65.pdf">AdversaryAI at BLP-2025 Task 2: A Think, Refine, and Generate (TriGen) System with LoRA and Self-Refinement for Code Generation</a>
 
 </div>
@@ -41,8 +42,8 @@ My research focuses on Natural Language Processing for low-resource languages, m
 ### **BRAINTEASER: Advanced Commonsense Reasoning in Language Models**
 <small>2024 | Shared Task at SemEval 2024, co-located with NAACL</small>
 
-*   Designed **data augmentation pipelines** to improve model robustness for complex commonsense reasoning tasks involving lateral thinking puzzles.
-*   Conducted a **comparative analysis** of advanced language models, analyzing performance gaps and reasoning patterns in non-standard logical scenarios.
+*   Designed data augmentation pipelines to improve model robustness on commonsense reasoning tasks built around lateral thinking puzzles.
+*   Conducted a **comparative analysis** of language models, analyzing performance gaps and reasoning patterns in non-standard logical scenarios.
 *   **Publication:** <a href="https://aclanthology.org/2024.semeval-1.180.pdf" target="_blank" rel="noopener noreferrer">Deja Vu at SemEval 2024 Task 9: A Comparative Study of Advanced Language Models for Commonsense Reasoning</a>
 
 </div>
@@ -52,10 +53,10 @@ My research focuses on Natural Language Processing for low-resource languages, m
 ### **Violence Inciting Text Detection (VITD) in Bangla**
 <small>2023 | Shared Task at the BLP Workshop, co-located with EMNLP</small>
 
-<span class="achievement-badge">📊 Top 20 — Improved from Rank 19 → 12 in Post-evaluation</span>
+<span class="achievement-badge">📊 Ranked 12th in Post-evaluation (19th Official)</span>
 
-*   Applied **semi-supervised self-training** to address class imbalance, significantly improving performance on minority classes.
-*   Enhanced dataset diversity through **back-translation** using the Googletrans API, improving semantic variety while correcting linguistic inconsistencies.
+*   Applied semi-supervised self-training to address class imbalance and improve performance on minority classes.
+*   Increased dataset diversity through back-translation with the Googletrans API, improving semantic variety while correcting linguistic inconsistencies.
 *   Implemented an **ensemble approach** combining multiple transformer models with bagging and majority voting to reduce prediction variance.
 *   **Publication:** <a href="https://aclanthology.org/2023.banglalp-1.32.pdf" target="_blank" rel="noopener noreferrer">Team_Syrax at BLP-2023 Task 1: Data Augmentation and Ensemble Based Approach for Violence Inciting Text Detection in Bangla</a>
 

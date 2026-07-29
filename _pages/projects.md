@@ -30,7 +30,7 @@ Contributed a fault scenario to **SREGym**, an open-source benchmark for evaluat
 ### **gf: GlassFish Dev Workflow CLI**
 <small>2026 | <a href="https://github.com/riyadomf/glassfish-hotswap-cli" target="_blank" rel="noopener noreferrer">GitHub Repository</a></small>
 
-<span class="achievement-badge">⚡ 96% Faster Dev Cycles (2m → 5s)</span>
+<span class="achievement-badge">⚡ Edit-Deploy Cycles: 2 min → 5 s</span>
 
 A cross-platform GlassFish development CLI that replaces IDE-driven deployment workflows with terminal-first hot-swap and AI-assisted server management.
 
@@ -45,16 +45,35 @@ A cross-platform GlassFish development CLI that replaces IDE-driven deployment w
 
 <div class="experience-card" markdown="1">
 
+### **Token-Efficient LLM Query Router**
+<small>2026 | AMD Hackathon Act II, Track 1 | <a href="https://github.com/riyadomf/llm-query-router" target="_blank" rel="noopener noreferrer">GitHub Repository</a></small>
+
+<span class="achievement-badge">⚙️ Precision-Gated Cascade: Zero-Token Tiers First</span>
+
+An agent that answers 8 task categories (factual Q&A, math, sentiment, summarization, NER, code debugging, logic, code generation) while minimizing paid API token spend under a hard accuracy gate.
+
+*   **Precision-gated cascade:** a zero-token regex router (64/64 on dev and adversarial paraphrases), then a non-generative ONNX sentiment classifier shipped only after measuring 100% precision, then a LoRA fine-tuned Qwen2.5-1.5B for local factual Q&A and NER, with a cloud model as accuracy backstop. Each tier answers only what it can prove it handles; everything uncertain escalates.
+*   **Program-aided math:** instead of having the model compute, it emits a symbolic expression evaluated by a sandboxed AST interpreter. Arithmetic errors disappear as a category and output tokens drop about 90%.
+*   **Verification guards over self-assessment:** model-reported confidence measured unreliable at this scale, so local answers pass deterministic checks instead. An entity-completeness check catches 99% of dropped entities in NER output.
+*   **Runtime speed calibration:** detects the grading host's actual throughput and enables a local tier only when it can finish in time.
+*   **Evidence-driven iteration:** an offline LLM-as-judge harness mirroring the official rubric tested every change before a submission was spent, across 17 measured releases with root-cause analysis for a production timeout, an accuracy-gate failure, and a token regression from an over-broad regex. Immutable Docker tags per submission kept every graded build reproducible.
+*   **Stack:** Python, PyTorch, Unsloth/LoRA, ONNX Runtime, Docker, Fireworks API
+
+</div>
+
+<div class="experience-card" markdown="1">
+
 ### **KnowledgeRelay: AI Knowledge Transfer Agent**
 <small>2025 | <a href="https://github.com/riyadomf/knowledgeRelay" target="_blank" rel="noopener noreferrer">GitHub Repository</a></small>
 
-<span class="achievement-badge">🏆 6th Place — DSI AI Agent Hackathon 2025</span>
+<span class="achievement-badge">🏆 6th Place, DSI AI Agent Hackathon 2025</span>
 
-A Retrieval-Augmented Generation (RAG) system built during a 24-hour onsite hackathon to preserve institutional knowledge and assist onboarding engineers through contextual Q&A.
+Built in a 24-hour onsite hackathon to solve a problem every team has: when someone leaves, the unwritten knowledge leaves with them. The agent captures that knowledge before departure, then answers new joiners' questions from it.
 
-*   **Multi-Stage Knowledge Ingestion:** Generated structured QA pairs from internal documents to improve retrieval quality beyond direct vector similarity search.
-*   **Context-Aware Retrieval:** Implemented conversational query rewriting using chat history for more accurate follow-up question handling.
-*   **Hybrid Local/Cloud LLM Support:** Supported both OpenAI APIs and locally hosted Ollama models for flexible deployment.
+*   **Adaptive knowledge capture:** interactively prompts an outgoing member with context-aware questions generated from the ongoing conversation, so the knowledge base is built by interview rather than by hoping someone writes documentation.
+*   **Document and code ingestion:** extracts knowledge from uploaded PDFs, Word files, and source code, with separate chunking strategies for code and prose.
+*   **Grounded retrieval:** rewrites follow-up questions into self-contained queries using prior conversation context, and attributes every answer back to its source file.
+*   **Hybrid local/cloud LLMs:** runs against OpenAI APIs or locally hosted Ollama models.
 *   **Stack:** Python, FastAPI, LangChain, ChromaDB, OpenAI, Ollama, React
 
 </div>

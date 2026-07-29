@@ -54,7 +54,6 @@ My primary focus is backend systems engineering, enterprise application architec
 <span class="skill-tag primary">PostgreSQL</span>
 <span class="skill-tag">MySQL</span>
 <span class="skill-tag">Redis</span>
-<span class="skill-tag">Neo4j</span>
 <span class="skill-tag">Supabase</span>
 <span class="skill-tag">MinIO (S3-compatible)</span>
 <span class="skill-tag">Hibernate / JPA</span>

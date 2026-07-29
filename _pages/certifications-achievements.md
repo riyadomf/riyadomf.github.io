@@ -9,20 +9,20 @@ author_profile: true
 
 <div class="experience-card" markdown="1">
 
-### 4th Place — Code Generation in Bangla, BLP 2025 (IJCNLP-AACL)
+### 4th Place: Code Generation in Bangla, BLP 2025 (IJCNLP-AACL)
 
-<span class="achievement-badge">4th / 32 Teams — 85% Accuracy</span>
+<span class="achievement-badge">4th / 32 Teams (Pass@1 0.85)</span>
 
 Developed a code generation system for Bangla using LoRA fine-tuning and Chain-of-Thought reasoning with self-refinement.  
-**Leaderboard:** <a href="https://noshinulfat.github.io/blp25_code_generation_task/#/home:~:text=AdversaryAI,0.850" target="_blank">View Results</a>
+**Leaderboard:** <a href="https://noshinulfat.github.io/blp25_code_generation_task/" target="_blank">View Results</a>
 
 </div>
 
 <div class="experience-card" markdown="1">
 
-### Top 20 — Violence Inciting Text Detection (VITD), BLP 2023 (EMNLP)
+### Ranked 12th: Violence Inciting Text Detection (VITD), BLP 2023 (EMNLP)
 
-<span class="achievement-badge">Improved Rank 19 → 12 in Post-evaluation</span>
+<span class="achievement-badge">12th in Post-evaluation (19th Official)</span>
 
 Applied semi-supervised learning, back-translation, and ensemble methods to fine-tune BanglaBERT.  
 **Leaderboard:** <a href="https://github.com/blp-workshop/blp_task1" target="_blank">View Results</a>
@@ -35,7 +35,7 @@ Applied semi-supervised learning, back-translation, and ensemble methods to fine
 
 <div class="experience-card" markdown="1">
 
-### 6th Place — DSI AI Agent Hackathon, 2025
+### 6th Place: DSI AI Agent Hackathon, 2025
 
 <span class="achievement-badge">6th / 30 Teams</span>
 
@@ -46,7 +46,7 @@ Built **KnowledgeRelay**, a RAG-based AI agent for knowledge transfer, in a 24-h
 
 <div class="experience-card" markdown="1">
 
-### 11th Place — BUET CSE Fest 2022 AI Contest
+### 11th Place: BUET CSE Fest 2022 AI Contest
 
 Competed in an AI/ML challenge organized by Bangladesh University of Engineering and Technology (BUET).
 
@@ -58,7 +58,7 @@ Competed in an AI/ML challenge organized by Bangladesh University of Engineering
 
 <div class="experience-card" markdown="1">
 
-### Certified in Cybersecurity (CC) — ISC²
+### Certified in Cybersecurity (CC), ISC²
 
 <span class="achievement-badge">🛡️ ISC² Certified</span>
 
