@@ -22,11 +22,6 @@ Core member of the engineering team building large-scale enterprise systems for 
 
 </div>
 
-### Core Contributions
-
-*   Isolated auditing and notification dispatch from business logic using **AspectJ-based cross-cutting interceptors**, establishing a reusable pattern across multiple Jakarta EE systems.
-*   Performed application security reviews and **static/dynamic testing against OWASP Top 10** risks as part of the internal Cybersecurity Team, identifying access-control, injection, and validation flaws before production release.
-
 
 <div class="experience-card" markdown="1">
 
@@ -54,6 +49,7 @@ Core member of the engineering team building large-scale enterprise systems for 
 
 *   Designed a reusable **approval-workflow engine** backed by configurable state transitions, replacing hardcoded per-module approval logic. Engineered a **dynamic field-level correction system** enabling reviewers to reopen only selected form fields with inline feedback while preserving audit history.
 *   Introduced centralized **observability** for GlassFish applications using **Prometheus, Loki, and Grafana**, exposing JVM memory, thread pools, and request latency for production debugging and capacity monitoring.
+*   Isolated auditing and notification dispatch from business logic using **AspectJ-based cross-cutting interceptors**, establishing a reusable pattern across multiple Jakarta EE systems.
 
 </div>
 

@@ -85,7 +85,6 @@ My primary focus is backend systems engineering, enterprise application architec
 <h3>🔒 Security</h3>
 
 <div class="skill-tags">
-<span class="skill-tag primary">OWASP Top 10</span>
 <span class="skill-tag">Jakarta Security</span>
 <span class="skill-tag">RBAC</span>
 <span class="skill-tag">JWT</span>

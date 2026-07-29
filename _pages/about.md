@@ -53,7 +53,6 @@ GRE: 317/340 | TOEFL: 104/120
 * **Low-Resource NLP**: code generation and text classification for Bangla and other low-resource languages
 * **AI Infrastructure & Retrieval Systems**: LLM enrichment pipelines, RAG systems, and production ML workflows
 * **Backend & Distributed Systems**: enterprise application architecture, workflow engines, observability, and operational tooling
-* **Security Engineering**: application security reviews against OWASP Top 10 and AI-assisted security tooling
 
 ---
 
