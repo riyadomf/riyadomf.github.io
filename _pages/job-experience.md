@@ -23,14 +23,14 @@ Core member of the engineering team building large-scale enterprise systems for 
 </div>
 
 
-<div class="experience-card" markdown="1">
+<!-- <div class="experience-card" markdown="1">
 
 #### **EC-BVRS: Bangladesh Voter Registration System**
 *Bangladesh's national voter registration (NID) platform, built on Spring Boot, Kafka, and Redis.*
 
 *   Contributed to the **data pipeline** behind the voter registration flow, which processes records for nearly **150 million voters**.
 
-</div>
+</div> -->
 
 <div class="experience-card" markdown="1">
 
