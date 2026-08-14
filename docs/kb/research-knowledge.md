@@ -23,6 +23,8 @@ Shorthand: AI+SRE, AI+SWE, low-resource NLP. Keep the phrasing plain; "reliabili
 
 **The narrative in one paragraph**: three years of production systems engineering (government-scale Jakarta EE, distributed pipelines, an open-source JVM tool) plus a shared-task NLP publication record, now converging on the question of whether AI agents can operate real systems reliably. The SREGym work is exactly that intersection: it takes someone who has debugged production Kubernetes-adjacent systems to design benchmark scenarios that expose where agents fail. The systems background is not a detour from research; it is the qualification for this research.
 
+**The personal thread: persistence on root cause.** The habit underneath both tracks is refusing to stop at the symptom. It is also why the SREGym direction is a genuine fit rather than a convenient one: the agent failure modes the benchmark targets, greedy diagnosis anchoring above all, are the machine version of stopping at the first plausible cause. Designing scenarios and oracles that punish that behavior is the same instinct written down as an acceptance test, which is precisely what the PR #886 oracle does when it rejects a fix that deletes all webhooks and calls the incident resolved. Concrete anchors when this needs evidence: the multi-layer investigation behind the `gf` CLI (JVM class reloading, Mojarra Facelets caching read out of the framework source, JasperReports classloader caching), and root-causing every regression across 17 measured releases of the LLM query router. Both are detailed in [dev-knowledge.md](dev-knowledge.md) §1.
+
 ---
 
 ## 2. SREGym: AI for site reliability engineering
@@ -114,6 +116,7 @@ Canonical framings (each fact appears once per document; as of 2026-07-29 ranks 
 2. **NLP research track**: three shared-task workshop papers (two first-author), each an exercise in making models work under low-resource constraints: LoRA fine-tuning, self-refinement with execution feedback, semi-supervised learning, ensembling.
 3. **Convergence**: SREGym. AI agents for SRE need exactly this combination: systems intuition to design realistic failure scenarios, and ML methodology to evaluate agent behavior rigorously. My merged contribution reproduces a real Kubernetes control-plane incident with an oracle that resists reward hacking; my current work extends the benchmark to real-world failure scenarios for the v2 paper.
 4. **Direction**: agents that operate real systems (SRE, software engineering) evaluated against benchmarks that reflect production reality, not synthetic toy faults.
+5. **The through-line, if the statement needs a human center**: persistence on root cause. Point 1 is where the habit was formed, debugging production systems where the answer was never in the error message. Point 3 is what happens when it is aimed at AI systems instead of my own code: building benchmarks that measure whether an agent found the cause or merely silenced the symptom. Use one concrete instance, not the adjective.
 
 ### Evidence checklist per application
 

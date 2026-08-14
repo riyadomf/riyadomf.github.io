@@ -47,6 +47,21 @@
 7. Research track in one line: SREGym benchmark work plus three NLP papers (shows range, then move on for dev audiences)
 8. Teaching: Enterprise JEE course at Dynamic Learning
 
+### Signature strength: root-cause debugging
+
+The trait underneath most of the work below: I do not stop at the symptom, and I do not stop early. **Always show it through an instance, never assert it flat.** "Strong debugging skills" is a line anyone can type; the Mojarra trace is proof.
+
+**The evidence chain** (each one is documented in full later in this file):
+
+- **gf CLI** (§2.2). The team treated a two-minute deploy cycle as a fact of life. Tracing it turned up four separate causes: JVM class-reloading limits, Mojarra Facelets caching, JasperReports classloader caching, and GlassFish deployment overhead. The fix required reading Mojarra 4.1.6's `FaceletCacheFactoryImpl` source to find that refresh behavior depends on `ProjectStage`. No config flag or log line would have surfaced that.
+- **LLM query router** (§4.4). 17 measured releases, each regression root-caused before the next build: a production timeout, an accuracy-gate failure, and a token regression traced back to an over-broad regex. I also tested my own assumption that model self-confidence was usable, measured it unreliable, and replaced it with deterministic guards.
+- **BCIC-ERP** (§2.6). Traced OOM patterns back to base64-inlined file rendering producing multi-MB HTML pages, then re-architected delivery instead of raising the heap.
+- **SREGym** (research-knowledge.md §2). The habit turned into a design principle: the mitigation oracle exists specifically to reject fixes that mask the symptom, such as deleting all webhooks, without restoring the control-plane path.
+
+**Interview use**: lead with 7.1 (gf) for "hard problem" or "persistence" questions, then 7.9 (query router) for "how did you know you were right". The pair reads as "traces to the cause" plus "verifies instead of trusting intuition", which is one trait aimed at two targets.
+
+**CV use**: implicitly, through the artifacts. Do not add a "strong debugging and root-cause analysis" line to the skills section. Self-assessed soft-skill claims are the first thing a reviewer discounts, and the gf bullet already demonstrates it.
+
 ---
 
 ## 2. DSI experience deep-dives
@@ -374,6 +389,9 @@ Rule: every skills-line entry is a claim volunteered for interrogation. Anything
 | Critical problem you solved | 7.1 gf CLI |
 | Improved something proactively | 7.1 gf CLI |
 | Deep debugging in unfamiliar code | 7.1 (Mojarra reverse-engineering) |
+| Persistence / stuck on something hard | 7.1, then 7.9 if they want a second instance |
+| Root-caused a regression under pressure | 7.9 (17 releases, each regression traced before redeploy) |
+| Debugged a silent failure with no error | SREGym admission-webhook scenario (research-knowledge.md §2) |
 | Owned architecture / set the pattern | 7.2 E-Appeal |
 | Pragmatic tradeoff / chose simplicity | 7.3 Postgres locking, no Redis |
 | Performance optimization | 7.4 asyncio 10x |

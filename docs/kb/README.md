@@ -43,6 +43,8 @@ Anything in those categories lives in the **private layer**: `~/Documents/person
 - **Dynamic Learning**: Course Instructor (Enterprise Web Development with JEE, JSF, and PrimeFaces), 2024 to present.
 - **UIUC / SREGym**: Research Intern, advised by Prof. Tianyin Xu, 2026.
 
+**Signature strength (both tracks)**: root-cause debugging, and persistence in staying on a problem until the cause is found rather than the symptom silenced. Always shown through a specific instance, never claimed as an adjective. Evidence chain in [dev-knowledge.md](dev-knowledge.md) §1; research framing in [research-knowledge.md](research-knowledge.md) §1.
+
 ## Locked decisions (2026-07-18 review round; do not relitigate)
 
 1. **Both CVs target 2 pages, but that is a preference, not a hard ceiling.** Never delete content to make a CV fit. When an edit pushes it past two pages, compile, look at what actually overflows, and **tell Omar what is spilling and what could go, then wait for his decision**. Tightening wording without losing a fact is fine unprompted; removing a bullet, entry, or claim is his call.
