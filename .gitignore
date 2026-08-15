@@ -14,3 +14,7 @@ package-lock.json
 
 vendor/
 .bundle
+
+# Career knowledge base: lives in a separate PRIVATE repo cloned at docs/kb/.
+# Never commit it here. See the "Knowledge base" section of .claude/CLAUDE.md.
+docs/
