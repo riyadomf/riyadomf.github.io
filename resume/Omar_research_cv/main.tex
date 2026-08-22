@@ -51,7 +51,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -61,8 +61,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -71,7 +71,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-4pt}}
   }
 }
 
@@ -101,9 +101,9 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=2pt, itemsep=2pt, parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, topsep=8pt, parsep=0pt, partopsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -185,7 +185,9 @@
     {Dynamic Solution Innovators  \href{https://www.dsinnovators.com/}{\faExternalLink*}}{April 2023 -- Present}
     {Software Engineer}{Dhaka, Bangladesh}
     \resumeItemListStart
-      \resumeItem{Contributed to the data pipeline behind the voter registration flow of EC-BVRS, Bangladesh's national voter registration (NID) platform, which processes records for nearly \textbf{150 million voters} (Spring Boot, Kafka, Redis).}
+      \resumeItem{Contributed to the data pipeline behind the voter registration flow of EC-BVRS, Bangladesh's national voter registration (NID) platform, which processes records for nearly \textbf{150 million voters} (Spring Boot, Kafka, Kudu, Redis).}
+
+      \resumeItem{Resolved a production incident blocking payment processing after the Kafka pipeline fell \textbf{500K events behind}; traced recurring consumer rebalances to slow Kudu writes one layer below and reduced batch size to restore consumer liveness and clear the backlog.}
       \resumeItem{Built and open-sourced \href{https://github.com/riyadomf/glassfish-hotswap-cli}{\texttt{gf} \faExternalLink*}, a GlassFish CLI that hot-swaps modified bytecode into running JVMs over JDI/JDWP and bypasses JasperReports classloader caching. Cut local edit-deploy cycles from \textbf{$\sim$2 minutes to $\sim$5 seconds}.}
       \resumeItem{Introduced Prometheus, Loki, and Grafana observability for GlassFish applications, exposing JVM memory, thread pools, and request latency for production debugging.}
     \resumeItemListEnd

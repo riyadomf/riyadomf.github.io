@@ -5,7 +5,7 @@ permalink: /skills/
 author_profile: true
 ---
 
-My primary focus is backend systems engineering, enterprise application architecture, and production AI infrastructure. I work across JVM systems, distributed workflows, ML pipelines, and operational tooling.
+My primary focus is backend systems engineering, enterprise application architecture, and production AI infrastructure. I work across JVM systems, distributed workflows, and ML pipelines, plus the operational side of shipping them: observability, incident debugging, and reliability.
 
 ---
 

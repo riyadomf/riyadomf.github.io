@@ -26,9 +26,11 @@ Core member of the engineering team building large-scale enterprise systems for 
 <!-- <div class="experience-card" markdown="1">
 
 #### **EC-BVRS: Bangladesh Voter Registration System**
-*Bangladesh's national voter registration (NID) platform, built on Spring Boot, Kafka, and Redis.*
+*Bangladesh's national voter registration (NID) platform, built on Spring Boot, Kafka, Apache Kudu, and Redis.*
 
 *   Contributed to the **data pipeline** behind the voter registration flow, which processes records for nearly **150 million voters**.
+*   Resolved a **production incident** blocking payment processing after the Kafka pipeline fell **500,000 events behind**; traced recurring **consumer group rebalances** to slow Kudu writes and reduced batch size to restore consumer liveness and clear the backlog.
+*   The symptoms and the cause sat in different components: Kafka kept evicting a consumer that was healthy, because each batch was waiting on Kudu writes. Tuning Kafka alone would never have reached it.
 
 </div> -->
 

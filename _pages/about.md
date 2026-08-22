@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I build backend systems, enterprise applications, and production AI infrastructure. I care about correctness, operational reliability, and architecture that stays maintainable. My work spans government-scale Jakarta EE systems, distributed ML pipelines, and low-resource NLP research, including three workshop papers co-located with EMNLP, NAACL, and IJCNLP-AACL.
+I'm a software engineer who builds backend systems and production AI infrastructure, and who spends a good share of time on the software reliability side. My work spans enterprise-scale Jakarta EE and Spring Boot platforms, distributed ML pipelines, and research on AI agents for site reliability engineering, alongside three NLP workshop papers co-located with EMNLP, NAACL, and IJCNLP-AACL.
 
 <div class="stats-grid">
   <div class="stat-card">
